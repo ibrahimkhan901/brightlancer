@@ -1,0 +1,189 @@
+import React from 'react'
+import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
+import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
+import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
+import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
+import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
+import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
+import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
+import AwardTakingImg8 from "../../public/images/AwardTaking8.webp"
+import AwardTakingImg9 from "../../public/images/AwardTaking9.webp"
+import Image from 'next/image'
+
+
+
+
+
+
+
+
+
+const AboutOurAchievments = () => {
+
+
+
+
+    let achievementsArray = [
+        "Saqib Azhar was recognized as a high achiever in the National Youth Awards.",
+        "In KPK, Brightlancers has partnered with the United Nations on a collaborative project to empower youth.",
+        "Brightlancers' notable contributions and accomplishments have earned them national and international recognition.",
+        "Introduced Brightlancers Academy’s innovative training programs focusing on digital skills and eCommerce in Pakistan.",
+        "Brightlancers actively participates as Board Patrons of Youth Parliament & Members of Youth General Assembly.",
+        "Brightlancers has partnered with over 150 organizations to provide valuable opportunities for youth in Pakistan.",
+        "The Brand of the Year Award for Best eCommerce Skill Learning Platform in Pakistan has been awarded to Brightlancers.",
+        "Brightlancers received multiple awards from government officials for their impactful contributions to youth development.",
+        "Brightlancers introduced Degree Programs integrated with eCommerce skills in Pakistan’s education system.",
+        "To advance Pakistan's digital economy, Saqib Azhar has been named as the IT Advisor to the Prime Minister of Pakistan, Mr. Shahbaz Sharif."
+    ]
+
+
+
+
+
+
+    return (
+        <div className='min-h-[100vh] w-full overflow-x-hidden p-10 '>
+
+
+
+
+            {/* Heading */}
+            <div className="text-xl  lg:text-4xl text-[#f05c2f] mb-10 ">
+                <div className="text-xl  md:text-4xl">OUR</div>
+                <div className="text-xl  md:text-4xl">ACHIEVEMENTS</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            {/* descripttion with side image and also some icons at the bottom */}
+            <div className="h-max w-full flex flex-col md:flex-row justify-center text-center lg:justify-start md:text-start gap-x-10 mb-10">
+
+
+                <div className="h-full md:w-[100%]">
+                    <p className='mb-5'>
+                        Brightlancers has been recognized for its outstanding contribution to empowering Pakistan’s youth in the digital and eCommerce space. We are proud to have been awarded the Best eCommerce Academy of the Year in 2023 and 2024. Our dedication has earned us accolades such as Brand of the Year and Fastest Growing Digital Education Platform in 2024.
+
+                        Recently, Brightlancers has also received international recognition from prestigious bodies like the United Nations Youth Program for our significant impact on the youth of Pakistan, helping them step into the world of eCommerce and digital entrepreneurship.
+                    </p>
+                    <div className="h-full w-full flex  flex-wrap justify-center">
+                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
+                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
+                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
+                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* The images of achievements section */}
+            <div className="h-full w-full  flex items-center flex-wrap justify-center">
+
+                {
+                    [AwardTakingImg1, AwardTakingImg2, AwardTakingImg3, AwardTakingImg4, AwardTakingImg5, AwardTakingImg6, AwardTakingImg7].map((eachImage, index) => {
+                        return (
+                            // <img
+                            //     key={index}
+                            //     className='h-max w-full sm:w-[50%] md:w-[30%] '
+                            //     src={eachImage} alt="" />
+                        
+                            <Image  
+                            key={index}
+                            src={eachImage}
+                            alt="Award taking image"
+                            height={400}
+                            width={800}
+                            className='h-max w-full sm:w-[50%] md:w-[30%] '
+                            />
+                        
+                        )
+                    })
+                }
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            {/* Other achievement  */}
+            <div className="min-h-[100vh] w-full flex flex-col-reverse lg:flex-row justify-center lg:justify-start">
+
+
+                <div className="h-full w-full p-6">
+                    {
+                        achievementsArray.map((eachAchieve, index) => {
+                            return (
+                                <div
+                                    key={index}
+                                    className="font-medium">
+                                    {eachAchieve}
+                                    <div className="h-[1px] w-full bg-zinc-300 mb-4"></div>
+                                </div>
+
+                            )
+                        })
+                    }
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    )
+}
+
+export default React.memo(AboutOurAchievments)

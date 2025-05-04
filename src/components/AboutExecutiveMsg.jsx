@@ -1,0 +1,86 @@
+import React from 'react'
+
+const AboutExecutiveMsg = () => {
+    return (
+        <div className='min-h-[100vh] w-full p-10'>
+
+
+
+
+            {/* heading */}
+            <div className="text-2xl md:text-4xl font-bold text-[#f05c2f] mb-5">
+                EXECUTIVE MESSAGE
+            </div>
+
+
+
+
+
+
+
+            {/* The photo and messeges */}
+            <div className="min-h-[100vh] w-full flex flex-col md:flex-row p-3 lg:p-10  ">
+
+
+
+                {/* CEO image and photo */}
+                <div className="h-max w-full sm:w-1/2  lg:px-10 mb-10 p-6">
+
+                    <div className="h-max w-1/2 flex  mb-10">
+                        <img src="https://www.enablers.org/assets-app/img/about-us-page/saqib.jpg" alt="" />
+
+                        <div className="h-max w-max mt-28 flex flex-col items-end">
+                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>Saqib Azhar</h1>
+                            <h3>Ceo Brightlancer</h3>
+                        </div>
+
+                    </div>
+
+                    <p className='text-sm md:text-[15px] lg:text-lg text-center md:text-start  '>I believe growth is essential for every Pakistani to thrive in this fast-moving, tech-driven era. We are living in the age of digital transformation, and the sooner we embrace this change, the faster we move towards success. True success comes not only from academic knowledge but also from strong character and direct industry exposure. At Brightlancers, we are fully committed to nurturing young talent and building a culture of innovation, entrepreneurship, and real-world skills.</p>
+
+                </div>
+
+
+
+
+                {/* COO image and photo */}
+
+                <div className="h-max w-full sm:w-1/2  lg:px-10 mb-10 p-6">
+
+                    <div className="h-max w-1/2 flex  mb-10">
+                        <img src="https://www.enablers.org/assets-app/img/about-us-page/faisal.jpg" alt="" />
+
+                        <div className="h-max w-max mt-28 flex flex-col items-end">
+                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>Faisal Azhar</h1>
+                            <h3>Coo enabler</h3>
+                        </div>
+
+                    </div>
+
+                    <p className='text-sm md:text-[15px] md:text-lg text-center md:text-start '>I strongly believe that the youth of Pakistan have incredible potential—but many face challenges when it comes to choosing the right career path. At Brightlancers, our mission is to guide them with clarity and purpose, helping them align their skills with real opportunities in the digital world. I’m confident that our youth are the driving force behind Pakistan’s future in the global eCommerce and tech industry, and it’s our responsibility to empower and support them in every step of their journey.</p>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    )
+}
+
+export default React.memo(AboutExecutiveMsg)
