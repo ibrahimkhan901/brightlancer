@@ -4,6 +4,8 @@ import React, { useContext } from 'react'
 import {coursesDataArray} from '../utils/CoursesDataArray.js'
 import MyContext from '../context/MyContext.jsx'
 import { useRouter } from 'next/navigation.js'
+import Logo from '../../public/images/Logo.webp'
+import Image from 'next/image.js';
 
 
 
@@ -27,21 +29,6 @@ let router= useRouter()
 
 let {setCurrentClickedCourseData}= useContext(MyContext)
 
-
-    // let courseDataTestingObj = {
-    //     tagline: "Become a Freelancer / Virtual Assistant",
-    //     description: "Become a specialist in freelancing and learn the core fundamentals for beginning a successful freelancer career.",
-    //     timing: "April 30, 2025"
-    // }
-
-
-    // let coursesDataArray=[
-    //     {
-    //         tagline:"Become a Freelancer / Virtual Assistant",
-    //         description:"Become a specialist in freelancing and learn the core fundamentals for beginning a successful freelancer career.",
-    //         timing:"April 30, 2025"
-    //     }
-    // ]
 
 
 
@@ -86,15 +73,23 @@ let {setCurrentClickedCourseData}= useContext(MyContext)
                         return (
                             <div
                                 key={index}
-                                className="min-h-96 w-96 border-1 p-3 md:p-2 pb-5 border-zinc-300 hover:shadow-md transition-all duration-600    shadow-zinc-800 text-center">
+                                className="min-h-96 w-80 border-1 p-3 md:p-2 pb-5 border-zinc-300 hover:shadow-md transition-all duration-600    shadow-zinc-800 text-center">
 
                                 <div className="h-full w-full relative">
                                     <div className="custom_gray_glassy_effect h-full w-full absolute top-0 right-0"></div>
-                                    <img
+                                    
+                                    <Image
+                                        src={Logo}
+                                        height={400}
+                                        width={800}
+                                        alt='Background image of course card'
+                                        className=' w-full mb-5 rounded-md'
+                                    />
+                                    {/* <img
                                         className='h-max w-full mb-5 rounded-md'
-                                        src="https://imgs.search.brave.com/OP5tmI1gaTotwGLRpaIsEemIgsuPKRgUrmyiwLh79SA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS82/MmY0OWE4OTBmY2Yu/anBn" alt="" />
+                                        src="https://imgs.search.brave.com/OP5tmI1gaTotwGLRpaIsEemIgsuPKRgUrmyiwLh79SA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS82/MmY0OWE4OTBmY2Yu/anBn" alt="" /> */}
                                     <h1
-                                        className='h-max w-[90%] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 font-bold text-4xl text-zinc-100'>
+                                        className='h-max w-[90%] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 font-bold text-3xl text-zinc-100'>
                                         {eachData.courseName}
                                     </h1>
                                 </div>

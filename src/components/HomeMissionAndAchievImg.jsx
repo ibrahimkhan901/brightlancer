@@ -7,8 +7,13 @@ import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
 import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
 import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
 import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
-import AwardTakingImg8 from "../../public/images/AwardTaking8.webp"
-import AwardTakingImg9 from "../../public/images/AwardTaking9.webp"
+
+
+
+
+
+
+
 
 
 
@@ -48,7 +53,7 @@ const HomeMissionAndAchievImg = () => {
                 {/* Mission explanation text */}
                 <div className="h-max sm:h-[100vh]  w-full sm:w-1/2 bg-zinc-800 p-10 py-20 text-zinc-200">
 
-                    <h1 className='text-3xl sm:text-4xl mb-5'>OUR MISSION</h1>
+                    <h3 className='text-3xl sm:text-4xl mb-5'>OUR MISSION</h3>
                     <p className='text-lg font-light'>Brightlancers is committed to making Pakistan—especially the youth of Bannu—a powerful force in the global eCommerce industry. Our team is fully focused on helping individuals become skilled entrepreneurs and work on international platforms like Amazon and Shopify. We aim to create thousands of digital earning opportunities through practical training and mentorship.</p>
                     {/* 
                     <button className='w-max  bg-blue-600 p-2 rounded-sm px-10 mt-10'>
@@ -82,7 +87,7 @@ const HomeMissionAndAchievImg = () => {
                         <i className="ri-building-4-line     text-6xl text-orange-600 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
-                            <h1>10,000+</h1>
+                            <h6>10,000+</h6>
                             <p className='w-36 text-sm'>NEW BUSINESS IN PAKISTAN</p>
                         </div>
 
@@ -98,7 +103,7 @@ const HomeMissionAndAchievImg = () => {
                         <i className="ri-global-line      text-6xl text-orange-600 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
-                            <h1>5+ Million PKR</h1>
+                            <h6>5+ Million PKR</h6>
                             <p className='w-36 text-sm'>EXPORTS FOR THE WORLDWIDE</p>
                         </div>
 
@@ -118,7 +123,7 @@ const HomeMissionAndAchievImg = () => {
                         <i className="ri-user-star-line      text-6xl text-orange-600 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
-                            <h1>500+</h1>
+                            <h6>500+</h6>
                             <p className='w-36 text-sm'>FREELANCERS</p>
                         </div>
 

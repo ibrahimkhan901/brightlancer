@@ -6,7 +6,12 @@ import MyContext from '../context/MyContext'
 import { useRouter } from 'next/navigation';
 import Logo from '../../public/images/BLlogo.png'
 import Image from 'next/image';
-import Link from 'next/link';
+
+
+
+
+
+
 
 
 
@@ -90,7 +95,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className=' custom_glassy_effect             h-max w-full overflow-x-hidden fixed top-0 left-0 z-[1000] '>
+        <header className=' custom_glassy_effect             h-max w-full overflow-x-hidden fixed top-0 left-0 z-[1000] '>
 
             <div className='h-18 sm:h-24 w-full  flex justify-between px-4 sm:px-7'>
 
@@ -132,7 +137,7 @@ const Navbar = () => {
 
 
                     {/* Navigation items for large screens */}
-                    <div
+                    <nav
                         onClick={handleNavParentDivClick}
                         className="nav_show_on_large_screen     flex justify-end w-full gap-x-4">
                         {
@@ -145,7 +150,7 @@ const Navbar = () => {
                                 </div>
                             ))
                         }
-                    </div>
+                    </nav>
 
 
                 </div>
@@ -200,17 +205,7 @@ const Navbar = () => {
                         }
 
 
-                        {/* <div className=''>HOME</div>
-                        <div className=''>ABOUT</div>
-                        <div className=''>SERVICES</div>
-                        <div className=''>TRAININGS</div>
-                        <div className=''>KIDS CLUB</div>
-                        <div className=''>FEMALE WINGS</div>
-                        <div className=''>CERTIFICATION</div>
-                        <div className=''>WORCS</div>
-                        <div className=''>SCHOOLS</div>
-                        <div className=''>COLLEGES</div>
-                        <div className=''>LOCATIONS</div> */}
+                        
                     </div>
 
 
@@ -228,7 +223,7 @@ const Navbar = () => {
 
 
 
-        </nav>
+        </header>
 
     )
 }

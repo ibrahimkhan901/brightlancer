@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://brightlancer.vercel.app
+
+# Sitemaps
+Sitemap: https://brightlancer.vercel.app/sitemap.xml

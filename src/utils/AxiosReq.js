@@ -9,11 +9,11 @@ async function axiosReqSender(method, url, data) {
   try {
 
 
-    console.log(import.meta.env.VITE_REACT_BACKEND_BASE_URL)
+    // console.log(import.meta.env.VITE_REACT_BACKEND_BASE_URL)
 
     let response = await axios({
       method,
-      url:`${import.meta.env.VITE_REACT_BACKEND_BASE_URL}${url}`,
+      url:`http://localhost:4000${url}`,
       data
     })
 
