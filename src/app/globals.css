@@ -57,20 +57,23 @@ body {
 .custom_low_glassy_effect{
   background: rgba(151, 147, 146, 0.0000001);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .custom_gray_glassy_effect{
   background: rgba(37, 36, 36, 0.767);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 
 .custom_glassy_effect{
-  background: rgba(255, 255, 255, 0.288);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.3); 
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    z-index: 1000; 
+
 }
 
 
@@ -94,5 +97,34 @@ body {
 
   .nav_show_on_large_screen {
       display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom_rotate{
+  rotate: 0deg;
+  animation: 1s anim infinite ease;
+}
+
+
+
+
+@keyframes anim{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }

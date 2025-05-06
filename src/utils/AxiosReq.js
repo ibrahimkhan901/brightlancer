@@ -11,6 +11,10 @@ async function axiosReqSender(method, url, data) {
 
     // console.log(import.meta.env.VITE_REACT_BACKEND_BASE_URL)
 
+
+    // https://bl-backend-beta.vercel.app/
+    // http://localhost:4000
+
     let response = await axios({
       method,
       url:`http://localhost:4000${url}`,

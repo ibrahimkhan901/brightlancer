@@ -97,12 +97,12 @@ const Navbar = () => {
     return (
         <header className=' custom_glassy_effect             h-max w-full overflow-x-hidden fixed top-0 left-0 z-[1000] '>
 
-            <div className='h-18 sm:h-24 w-full  flex justify-between px-4 sm:px-7'>
+            <div className='h-18 sm:h-24  w-full  flex justify-between px-4 sm:px-7'>
 
 
 
 
-
+ 
                 {/*  The logo of Navbar */}
                 <div className="h-full w-56 flex items-center select-none">
                   
@@ -139,7 +139,7 @@ const Navbar = () => {
                     {/* Navigation items for large screens */}
                     <nav
                         onClick={handleNavParentDivClick}
-                        className="nav_show_on_large_screen     flex justify-end w-full gap-x-4">
+                        className="nav_show_on_large_screen     flex justify-end w-full gap-x-4 font-bold   ">
                         {
                             navArray.map((eachNav, index) => (
                                 <div

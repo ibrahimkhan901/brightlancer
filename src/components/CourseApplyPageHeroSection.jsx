@@ -16,6 +16,7 @@ const CourseApplyPageHeroSection = () => {
 
 
     function handleCourseApplyBtnClick(){
+        console.log("Course apply form is clicked")
         router.push("/courseApplyForm")
     }
 
@@ -113,7 +114,7 @@ const CourseApplyPageHeroSection = () => {
 
                     <button 
                     onClick={handleCourseApplyBtnClick}
-                    className='h-max w-max px-10 p-3 rounded-md border-zinc-300 bg-orange-400 text-zinc-100'>
+                    className='h-max w-max px-10 p-3 rounded-md border-zinc-300 bg-orange-400 text-zinc-100 cursor-pointer'>
                         Apply Now
                         </button>
 

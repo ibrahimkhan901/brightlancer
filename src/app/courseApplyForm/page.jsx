@@ -7,6 +7,7 @@ import axiosReqSender from '../../utils/AxiosReq';
 import MyContext from '../../context/MyContext';
 // import { coursesDataArray } from '../utils/CoursesDataArray';
 import { useRouter } from 'next/navigation';
+import Loader from '@/components/Loader';
 
 
 
@@ -22,6 +23,7 @@ const CourseApplyForm = () => {
 
 
     let { currentClickedCourseData, setCurrentNavContext } = useContext(MyContext)
+    let [loaderVisibiliy, setLoaderVisibility] = useState(null)
     let router = useRouter()
 
 
@@ -98,49 +100,64 @@ const CourseApplyForm = () => {
 
     async function handleSubmit(event) {
         event.preventDefault()
-
-
-        const updatedFormData = {
-            ...formData,
-            courseId: currentClickedCourseData.id
-        };
-
-        // const result =  coursesDataArray.find(item => item.id == updatedFormData.courseId)
-        // console.log(result)
-
-        let method = "post";
-        let url = "/api/v1/courseApply"
-        let data = updatedFormData
-        let response = await axiosReqSender(method, url, data);
+        setLoaderVisibility("visible")
+        try {
 
 
 
-        console.log(response.data)
-        if (response.data.success == true) {
-            alert("Applied Successfully")
+            const updatedFormData = {
+                ...formData,
+                courseId: currentClickedCourseData.id
+            };
+
+            // const result =  coursesDataArray.find(item => item.id == updatedFormData.courseId)
+            // console.log(result)
+
+            let method = "post";
+            let url = "/api/v1/courseApply"
+            let data = updatedFormData
+            let response = await axiosReqSender(method, url, data);
+
+
+            if (response) {
+                setLoaderVisibility(null)
+            }
+
+
+            console.log(response.data)
+            if (response.data.success == true) {
+                alert("Applied Successfully")
+            }
+
+
+
+
+
+            setFormData({
+                username: '',
+                fatherName: "",
+                cnicNo: '',
+                email: '',
+                password: '',
+                phoneNo: "",
+                gender: "male",
+                country: "",
+                city: '',
+                fullAddress: "",
+                refferedBy: "facebook",
+                agreeOrNot: false,
+                courseId: ''
+            })
+
+
+
+
+
+
+        } catch (error) {
+            setLoaderVisibility(null)
+            console.log(error)
         }
-
-
-
-
-
-        setFormData({
-            username: '',
-            fatherName: "",
-            cnicNo: '',
-            email: '',
-            password: '',
-            phoneNo: "",
-            gender: "male",
-            country: "",
-            city: '',
-            fullAddress: "",
-            refferedBy: "facebook",
-            agreeOrNot: false,
-            courseId: ''
-        })
-
-
 
     }
 
@@ -432,8 +449,23 @@ const CourseApplyForm = () => {
 
                     {/* submit button */}
                     <button
-                        className='h-full w-full bg-blue-600 py-2 rounded-lg text-zinc-50 text-xl '
-                        type='submit'>Submit</button>
+                        className='h-full w-full bg-blue-600 py-2 rounded-lg text-zinc-50 text-xl relative'
+                        type='submit'>
+
+                        
+                            Submit
+
+
+                            <div 
+                            className='absolute top-1/2 right-1/3 -translate-y-1/2'
+                            style={{ display: loaderVisibiliy ? "block" : "none" }}
+                            >
+                                <Loader height={20} width={20} />
+                            </div>
+
+
+
+                    </button>
 
 
 

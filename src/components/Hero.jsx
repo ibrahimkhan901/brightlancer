@@ -1,5 +1,15 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useState } from 'react'
+import 'remixicon/fonts/remixicon.css'
 import Image from 'next/image'
+import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
+import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
+import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
+import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
+import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
+import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
+import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
+
 
 
 
@@ -12,32 +22,94 @@ import Image from 'next/image'
 
 const Hero = () => {
 
+    const [currentSlideValue, setCurrentSlideValue] = useState(0)
+
+    const imagesArray = [
+        AwardTakingImg1,
+        AwardTakingImg2,
+        AwardTakingImg3,
+        AwardTakingImg4,
+        AwardTakingImg5,
+        AwardTakingImg6,
+        AwardTakingImg7
+    ]
+
+
+
+
+
+
+
+
+
+    function handleLeftIconClick(e) {
+        // console.log("clicked on right click")
+        if (currentSlideValue != 0) {
+            setCurrentSlideValue(prev => prev - 100)
+        }
+    }
+
+
+    function handleRightIconClick(e) {
+        if (currentSlideValue >= ((imagesArray.length) * 100) - 100) {
+            setCurrentSlideValue(0)
+        } else {
+            setCurrentSlideValue(prev => prev + 100);
+        }
+    }
+
+
+
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (currentSlideValue >= ((imagesArray.length) * 100) - 100) {
+                setCurrentSlideValue(0)
+            } else {
+                setCurrentSlideValue(prev => prev + 100);
+            }
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, [currentSlideValue]);
+
+
+
+
+
+
+
+    //     useEffect(()=>{
+    // console.log(currentSlideValue)
+    //     },[currentSlideValue])
+
 
 
 
 
     return (
-        <div className='h-max w-full overflow-x-hidden flex mb-[-20px]  md:mb-20 '>
 
 
-            {/* The div which contain the text content about plateform in hero section */}
-            <div className="h-full w-[45%] p-5 pt-0 pl-18 hidden md:block">
+        <div className="flex flex-col-reverse md:flex-row w-full h-max overflow-x-hidden mb-[-20px] md:mb-20">
 
-                <h1 className='font-extrabold text-2xl lg:text-3xl mb-5 '>
+
+
+
+
+
+
+            {/* Text Section (on bottom for small, left for md+) */}
+            <div className="w-full md:w-1/2 p-5 pt-0 pl-18 hidden md:block ">
+                <h1 className="font-extrabold text-2xl lg:text-3xl mb-5">
                     Pakistan’s Leading eCommerce Skill-Building Academy
                 </h1>
-                <p className='font-sans font-semibold text-xl lg:text-2xl mb-10 '>
-                    Brightlancers is empowering the youth of Pakistan—especially in Bannu and surrounding regions—to build digital careers, grow online businesses, and become successful entrepreneurs in the world’s largest eCommerce markets.</p>
-
-
-
-                {/* <Image
-                    src="https://www.enablers.org/public/assets-app/img/awards/awards.webp"
-                    alt='Logo of Brightlancers'
-                    width={800}
-                    height={400}
-                /> */}
-
+                <p className="font-sans font-semibold text-xl lg:text-2xl mb-10">
+                    Brightlancers is empowering the youth of Pakistan—especially in Bannu
+                    and surrounding regions—to build digital careers, grow online
+                    businesses, and become successful entrepreneurs in the world’s
+                    largest eCommerce markets.
+                </p>
             </div>
 
 
@@ -45,32 +117,36 @@ const Hero = () => {
 
 
 
+            {/* The sliding image container */}
+            <div className="h-max w-full md:w-1/2  ">
+                <div
+                    className="flex items-start justify-start h-max md:h-[500px] w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10">
+                    {imagesArray.map((src, index) => (
+                        <div key={index}
+                            style={{ transform: `translateX(${-(currentSlideValue)}%)` }}
+                            className="flex-shrink-0 w-full snap-start relative transition-all duration-700">
+                            <Image
+                                src={src}
+                                alt={`Slide ${index + 1}`}
+                                width={800}
+                                height={400}
+                                className="h-full w-full object-contain rounded-md"
+                            />
+
+                            <i
+                                onClick={handleLeftIconClick}
+                                className="ri-arrow-right-line   absolute top-1/2 left-2 rotate-180 -translate-y-1/2 z-20 text-zinc-300 text-3xl"></i>
+                            <i
+                                onClick={handleRightIconClick}
+                                className="ri-arrow-right-line   absolute top-1/2 right-2 -translate-y-1/2 z-20 text-zinc-300 text-3xl"></i>
 
 
-
-
-            {/* The div which contain the sliding images section */}
-            <div className="h-96 md:h-[500px] w-full md:w-[55%] relative overflow-hidden">
-                <div className="h-full w-full md:w-[95%] md:h-[90%] absolute top-[-50px] left-0  z-[100] pt-16 md:pt-5">
-                    {/* <img
-                        className="h-full w-full object-contain"  // <-- use object-contain
-                        src="https://www.enablers.org/public/storage/uploads/admin/slider-images//hVJjLRqWwUm8AwsJAAPbPv2jJACkHH77GtyXjCD3.webp"
-                        alt="Slider Image"
-                    /> */}
-
-                    <Image  
-                        src="https://www.enablers.org/public/storage/uploads/admin/slider-images//hVJjLRqWwUm8AwsJAAPbPv2jJACkHH77GtyXjCD3.webp"
-                        alt='Sliding Advertisement Image image'
-                        height={400}
-                        width={800}
-                        className='h-full w-full object-contain'
-                        />
-
-
+                        </div>
+                    ))}
                 </div>
-
-                <div className="w-[80%] h-40 hidden md:block bg-orange-600 absolute bottom-48 lg:bottom-32 xl:bottom-24  right-0"></div>
             </div>
+
+
 
 
 

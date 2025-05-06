@@ -29,7 +29,7 @@ const CourseApplyPageCourseContent = () => {
 
         <div className="h-max w-full p-10">
             <h1 className='h-max w-full text-2xl md:text-3xl lg:text-4xl font-bold text-orange-400'>Course Breakdown</h1>
-            <p className='text-xl md:text-2xl lg:text-3xl font-medium'>This is a complete overview of the actions you will take while building your business with the Enablers</p>
+            <p className='text-xl md:text-2xl lg:text-3xl font-medium'>This is a complete overview of the actions you will take while building your business with the Brightlancers</p>
         </div>
 
 
