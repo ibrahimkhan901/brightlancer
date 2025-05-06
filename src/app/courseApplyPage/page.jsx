@@ -2,7 +2,6 @@
 'use client';
 
 import React, { useContext, useEffect } from 'react'
-import Navbar from '../../components/Navbar'
 import CourseApplyPageHeroSection from '../../components/CourseApplyPageHeroSection'
 import CourseApplyPageCourseContent from '../../components/CourseApplyPageCourseContent'
 import MyContext from '../../context/MyContext'
