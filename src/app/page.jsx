@@ -145,19 +145,8 @@ const Home = () => {
 
 
 
-      {/* As seen as componetnt */}
-      <HomeAsSeenAs />
 
 
-
-
-
-
-
-
-
-      {/* THe compoent contain the list of icon of friend company */}
-      <HomeOurFriends />
 
 
 

@@ -7,12 +7,12 @@ import AwardTaking8 from '../../public/images/AwardTaking8.webp'
 
 const AboutWhoAmI = () => {
   return (
-    <div className='h-max w-full overflow-x-hidden' >
+    <div className='h-full w-full overflow-x-hidden' >
 
 
 
       {/* here the images is rendered */}
-      <div className="h-max md:h-[48vh] overflow-hidden w-full flex flex-col md:flex-row mb-20">
+      <div className="h-full sm:h-[48vh] overflow-hidden w-full flex flex-col sm:flex-row mb-20">
 
 
         <Image
@@ -20,11 +20,11 @@ const AboutWhoAmI = () => {
           alt='Image in About'
           height={400}
           width={800}
-          className='h-max w-full md:w-1/2'
+          className='h-max w-full sm:w-1/2'
         />
 
 
-        <div className="bg-[#ee7020] h-full w-full md:w-1/2 flex items-center justify-center text-4xl text-zinc-100 font-bold p-10 text-center">
+        <div className="bg-[#ee7020] h-full w-full md:w-1/2 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl text-zinc-100 font-bold p-10 text-center">
           Pakistan's Best Ecommerce Plateform
         </div>
 

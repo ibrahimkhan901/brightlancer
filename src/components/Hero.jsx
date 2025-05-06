@@ -91,7 +91,7 @@ const Hero = () => {
     return (
 
 
-        <div className="flex flex-col-reverse md:flex-row w-full h-max overflow-x-hidden mb-[-20px] md:mb-20">
+        <div className="min-h-48  flex flex-col-reverse md:flex-row w-full overflow-x-hidden mb-[-20px] md:mb-20">
 
 
 
@@ -104,7 +104,7 @@ const Hero = () => {
                 <h1 className="font-extrabold text-2xl lg:text-3xl mb-5">
                     Pakistan’s Leading eCommerce Skill-Building Academy
                 </h1>
-                <p className="font-sans font-semibold text-xl lg:text-2xl mb-10">
+                <p className="font-sans font-medium text-sm lg:text-xl mb-10 text-shadow-zinc-400">
                     Brightlancers is empowering the youth of Pakistan—especially in Bannu
                     and surrounding regions—to build digital careers, grow online
                     businesses, and become successful entrepreneurs in the world’s
@@ -118,9 +118,9 @@ const Hero = () => {
 
 
             {/* The sliding image container */}
-            <div className="h-max w-full md:w-1/2  ">
+            <div className=" md:h-56 lg:h-72 w-full md:w-1/2 overflow-hidden p-5 ">
                 <div
-                    className="flex items-start justify-start h-max md:h-[500px] w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10">
+                    className="relative flex items-start justify-start h-max md:h-[500px] w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10">
                     {imagesArray.map((src, index) => (
                         <div key={index}
                             style={{ transform: `translateX(${-(currentSlideValue)}%)` }}
@@ -133,16 +133,19 @@ const Hero = () => {
                                 className="h-full w-full object-contain rounded-md"
                             />
 
-                            <i
-                                onClick={handleLeftIconClick}
-                                className="ri-arrow-right-line   absolute top-1/2 left-2 rotate-180 -translate-y-1/2 z-20 text-zinc-300 text-3xl"></i>
-                            <i
-                                onClick={handleRightIconClick}
-                                className="ri-arrow-right-line   absolute top-1/2 right-2 -translate-y-1/2 z-20 text-zinc-300 text-3xl"></i>
 
 
                         </div>
                     ))}
+
+
+                    <i
+                        onClick={handleLeftIconClick}
+                        className="ri-arrow-right-line   absolute top-1/2 left-2 rotate-180 -translate-y-1/2 z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
+                    <i
+                        onClick={handleRightIconClick}
+                        className="ri-arrow-right-line   absolute top-1/2 right-2 -translate-y-1/2 z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
+
                 </div>
             </div>
 

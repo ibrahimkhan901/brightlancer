@@ -159,7 +159,7 @@ const HomeOffer = () => {
 
 
 
-                <div className="h-[20vh] w-full overflow-x-hidden">
+                <div className="h-max w-full overflow-x-hidden">
                     <h1 className='text-2xl md:text-4xl text-zinc-900 text-center md:text-start mb-5 md:mb-0'>COLLABERATED WITH</h1>
                     <p className='text-lg md:text-xl text-zinc-700 font-medium pl-2 text-center md:text-start'>We proudly collaborate with government bodies and private organizations in our mission to make Pakistan a leading eCommerce hub, starting from the grassroots in regions like Bannu.</p>
                 </div>
@@ -167,7 +167,7 @@ const HomeOffer = () => {
                 <div className="h-max w-full overflow-x-hidden flex flex-wrap justify-center">
 
                     {
-                        [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 5, 7].map(() => {
+                        [1, 2, 3, 3, 3, 3, 3, 3].map(() => {
                             return (
                                 <div 
                                 key={Math.random()}
@@ -182,12 +182,7 @@ const HomeOffer = () => {
 
 
 
-                <div className="h-max w-full overflow-x-hidden flex justify-center">
-
-                    <button className='w-max  bg-blue-600  p-3 rounded-sm px-10 mt-10 outline-none border-none text-sm cursor-pointer text-zinc-100'>
-                        ___FINDOUT MORE....
-                    </button>
-                </div>
+                
 
 
             </div>

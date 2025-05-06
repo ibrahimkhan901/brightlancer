@@ -1,7 +1,8 @@
+'use client';
 import React from 'react'
 import { servicesDataArray } from '../utils/ServicesDataArray'
 import 'remixicon/fonts/remixicon.css'
-
+import { useRouter } from 'next/navigation';
 
 
 
@@ -12,6 +13,11 @@ import 'remixicon/fonts/remixicon.css'
 
 
 const ServicesListCards = () => {
+    
+
+    let router= useRouter()
+
+
     return (
         <div>
 
@@ -73,7 +79,9 @@ const ServicesListCards = () => {
                                 </div> */}
 
 
-                                <button className='h-max w-full rounded-lg  p-2 px-5 mt-16 bg-blue-500 text-zinc-200 mx-5'>Contact</button>
+                                <button 
+                                onClick={()=>{router.push("/contact")}}
+                                className='h-max w-full rounded-lg  p-2 px-5 mt-16 bg-blue-500 text-zinc-200 mx-5'>Contact</button>
 
                                 {/* <div className="h-24 w-full flex justify-center items-center px-10 p-5 gap-x-6 text-sm shadow-md shadow-zinc-400 mt-10">
 

@@ -49,7 +49,7 @@ export const metadata = {
   
 const Services = () => {
     return (
-        <div className='bg-zinc-100 pt-20 sm:pt-32'>
+        <div className='pt-20 sm:pt-32'>
 
 
             {/* The common navbar which  is also common in home and about */}

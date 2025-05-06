@@ -48,9 +48,9 @@ const AboutOurAchievments = () => {
 
 
             {/* Heading */}
-            <div className="text-xl  lg:text-4xl text-[#f05c2f] mb-10 ">
-                <div className="text-xl  md:text-4xl">OUR</div>
-                <div className="text-xl  md:text-4xl">ACHIEVEMENTS</div>
+            <div className="text-3xl text-center md:text-start font-bold  lg:text-4xl  text-[#f05c2f] mb-10 ">
+                <div className="  md:text-4xl">OUR</div>
+                <div className="  md:text-4xl">ACHIEVEMENTS</div>
             </div>
 
 
@@ -73,13 +73,13 @@ const AboutOurAchievments = () => {
 
                         Recently, Brightlancers has also received international recognition from prestigious bodies like the United Nations Youth Program for our significant impact on the youth of Pakistan, helping them step into the world of eCommerce and digital entrepreneurship.
                     </p>
-                    <div className="h-full w-full flex  flex-wrap justify-center">
+                    {/* <div className="h-full w-full flex  flex-wrap justify-center">
                         <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
                         <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
                         <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
                         <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
 
-                    </div>
+                    </div> */}
                 </div>
 
 

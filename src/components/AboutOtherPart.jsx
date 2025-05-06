@@ -1,6 +1,22 @@
+"use client";
+
 import React from 'react'
+import { useRouter } from 'next/navigation';
+
+
+
+
+
 
 const AboutOtherPart = () => {
+
+const router= useRouter()
+
+
+
+
+
+
     return (
         <div className='min-h-[100vh] w-full overflow-x-hidden p-5 md:p-10 mb-10 '>
 
@@ -25,8 +41,10 @@ const AboutOtherPart = () => {
 
             <div className="min-h-[50vh] py-10 lg:h-[100vh] w-full  flex flex-col items-center justify-center bg-zinc-300 text-2xl sm:text-3xl">
                 <h1 className='text-3xl sm:text-4xl text-[#f05c2f] mb-7'>OUR CAMPUSES</h1>
-                <p className='w-[70%] text-center mt-5'>We have one of the fastest-growing chains of campuses across Pakistan and expanding internationally, empowering youth through modern eCommerce education.</p>
-                <p className='mt-10 text-zinc-600 underline'>Find Our Campuses</p>
+                <p className='w-full px-10 text-2xl md:text-3xl lg:text-4xl text-center mt-5'>We have one of the fastest-growing chains of campuses across Pakistan and expanding internationally, empowering youth through modern eCommerce education.</p>
+                <p 
+                onClick={()=>{router.push("/location")}}
+                className='mt-10 text-blue-600 text-2xl md:text-3xl lg:text-4xl  underline cursor-pointer'>Find Our Campuses</p>
             </div>
 
 

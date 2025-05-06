@@ -126,11 +126,6 @@ const About = () => {
 
 
 
-      {/* <HomeOurFriends /> */}
-
-
-
-
 
 
 
