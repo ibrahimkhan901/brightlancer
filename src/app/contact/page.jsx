@@ -59,12 +59,8 @@ export const metadata = {
   
 const Contact = () => {
     return (
-        <div className='pt-20 sm:pt-32'>
+        <div className='pt-10 sm:pt-20'>
 
-
-
-
-            <Navbar />
 
 
 
@@ -81,18 +77,6 @@ const Contact = () => {
             <ContactSocialLinks />
 
 
-
-
-            <Footer />
-
-
-
-
-            {/* <HomeOurFriends /> */}
-
-
-
-            <TermAndDevDetails />
 
 
 

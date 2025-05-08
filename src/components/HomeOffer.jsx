@@ -1,4 +1,12 @@
 import React from 'react'
+import {
+    bilalSirImg,
+    qaiserSirImg
+} from '@/utils/Images.js'
+import Image from 'next/image'
+
+
+
 
 const HomeOffer = () => {
     return (
@@ -24,7 +32,7 @@ const HomeOffer = () => {
             {/* The cards which contian the offers */}
             <div className="min-h-[50vh]  flex flex-col md:flex-row ">
 
-                <div className="p-5 bg-blue-600 text-zinc-100">
+                <div className="p-5 bg-zinc-800 text-zinc-100">
                     <div className="flex justify-between items-center pr-3 mb-5">
                         <h1 className='text-3xl'>TRAINING PROGRAM</h1>
                         <i className="ri-group-line      text-5xl font-extralight  text-zinc-100 mb-5"></i>
@@ -84,20 +92,27 @@ const HomeOffer = () => {
 
 
 
-                <div className="min-h-[60vh] w-full flex flex-col md:flex-row bg-zinc-500">
+                <div className="min-h-[60vh] w-full flex flex-col md:flex-row ">
 
 
 
-                    <div className="h-full w-full md:w-1/2 bg-zinc-700">
-                        <div className="h-full w-full relative">
-                            <img
+                    <div className="h-full w-full md:w-1/2 p-5 rounded-lg">
+                        <div className="max-h-96 lg:max-h-[550px] overflow-y-hidden w-full relative rounded-lg shadow-lg shadow-orange-300 ">
+                            {/* <img
                                 className='min-h-[60vh] w-full'
-                                src="https://www.enablers.org/public/assets-app/img/Enablers-CEO.webp"
-                                alt="" />
+                                src={bilalSirImg}
+                                alt="" /> */}
 
-                            <div className="custom_redish_glassy_effect         min-h-32 w-[80%] absolute bottom-5 p-5 left-0 rounded-br-lg text-zinc-100">
-                                <h1 className='text-3xl '>SAQIB AZHAR</h1>
-                                <h2 className='font-thin text-2xl'>CEW & CO-FOUNDER</h2>
+                            <Image
+                                className='h-max  w-full '
+                                src={bilalSirImg}
+                                height={300}
+                                width={800}
+                                alt='Brightlancer Teacher image'
+                            />
+
+                            <div className="custom_redish_glassy_effect         font-bold w-[80%] absolute bottom-5 p-5 left-0 rounded-br-lg text-zinc-100">
+                                <h1 className='text-3xl '>SIR BILAL</h1>
                                 {/* <button className='w-max  bg-zinc-950  p-3 rounded-sm px-10 mt-10 outline-none border-none text-sm cursor-pointer'>
                                     ___FINDOUT MORE....
                                 </button> */}
@@ -108,15 +123,18 @@ const HomeOffer = () => {
 
 
 
-                    <div className="h-full w-full  md:w-1/2 bg-amber-200">
-                        <div className="h-full w-full relative">
-                            <img
-                                className='min-h-[60vh] w-full'
-                                src="https://www.enablers.org/public/assets-app/img/Enablers-CEO-CO-founder.webp" alt="" />
+                    <div className="h-full w-full  md:w-1/2 p-5 rounded-lg">
+                        <div className=" max-h-96 lg:max-h-[800px] overflow-y-hidden w-full relative rounded-lg shadow-lg shadow-orange-300">
+                            <Image
+                                className='h-max w-full'
+                                src={qaiserSirImg}
+                                height={300}
+                                width={800}
+                                alt='Brightlancer Teacher image'
+                            />
 
-                            <div className="custom_redish_glassy_effect         min-h-32 w-[80%] absolute bottom-5 p-5 left-0 rounded-br-lg text-zinc-100">
-                                <h1 className='text-3xl '>FAISEL AZHAR</h1>
-                                <h2 className='font-thin text-2xl'>C00 & CO-FOUNDER</h2>
+                            <div className="custom_redish_glassy_effect         font-bold w-[80%] absolute bottom-5 p-5 left-0 rounded-br-lg text-zinc-100">
+                                <h1 className='text-3xl '>SIR QAISER</h1>
                                 {/* <button className='w-max  bg-zinc-950  p-3 rounded-sm px-10 mt-10 outline-none border-none text-sm cursor-pointer'>
                                     ___FINDOUT MORE....
                                 </button> */}

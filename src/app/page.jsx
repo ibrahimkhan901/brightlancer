@@ -19,32 +19,6 @@ import MyContext from '../context/MyContext'
 
 
 
-// // app/page.tsx
-// export const metadata = {
-//   title: 'Brightlancer – Pakistan’s Leading eCommerce Skill-Building Academy',
-//   description: 'Empowering youth in Bannu and beyond with practical training in Amazon, Shopify, and freelancing to build successful digital careers.',
-//   keywords: ['Brightlancer', 'eCommerce training Pakistan', 'Amazon FBA courses', 'freelancing in Pakistan', 'digital skills Bannu'],
-//   openGraph: {
-//     title: 'Brightlancer – Pakistan’s Leading eCommerce Skill-Building Academy',
-//     description: 'Join Brightlancer to gain hands-on experience in eCommerce and freelancing, and become a successful digital entrepreneur.',
-//     url: 'https://brightlancer.vercel.app/',
-//     siteName: 'Brightlancer',
-//     images: [
-//       {
-//         url: '/meta-image.png',
-//         width: 800,
-//         height: 600,
-//         alt: 'Brightlancer Academy',
-//       },
-//     ],
-//     locale: 'en_US',
-//     type: 'website',
-//   },
-// };
-
-
-
-
 
 
 
@@ -55,7 +29,7 @@ const Home = () => {
 
 
 
-  
+
 
 
 
@@ -64,16 +38,7 @@ const Home = () => {
 
 
   return (
-    <div className='h-full w-full overflow-x-hidden pb-0 pt-20 sm:pt-32' >
-
-
-
-
-      {/* This is the Navbar of Home screen */}
-      <Navbar />
-
-
-
+    <div className='h-full w-full overflow-x-hidden pb-0 pt-0 sm:pt-32' >
 
 
 
@@ -143,36 +108,6 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* The footer fo home page */}
-      <Footer />
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* this comp contain the privary and developer details */}
-      <TermAndDevDetails />
 
 
 

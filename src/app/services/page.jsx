@@ -52,11 +52,6 @@ const Services = () => {
         <div className='pt-20 sm:pt-32'>
 
 
-            {/* The common navbar which  is also common in home and about */}
-            <Navbar />
-
-
-
 
 
 
@@ -91,41 +86,6 @@ const Services = () => {
 
             <ServicesDisclaimerAndWorks/>
 
-
-
-
-
-
-
-            {/* <HomeOurFriends/> */}
-
-
-
-
-
-
-
-
-            <Footer/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <TermAndDevDetails/>
 
 
 

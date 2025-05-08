@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useContext } from 'react'
-import {coursesDataArray} from '../utils/CoursesDataArray.js'
+import { coursesDataArray } from '../utils/CoursesDataArray.js'
 import MyContext from '../context/MyContext.jsx'
 import { useRouter } from 'next/navigation.js'
 import Logo from '../../public/images/Logo.webp'
@@ -23,11 +23,13 @@ const CoursesCards = () => {
 
 
 
-let router= useRouter()
+    let router = useRouter()
 
 
 
-let {setCurrentClickedCourseData}= useContext(MyContext)
+    let { setCurrentClickedCourseData,
+        setCurrentNavContext
+    } = useContext(MyContext)
 
 
 
@@ -37,8 +39,9 @@ let {setCurrentClickedCourseData}= useContext(MyContext)
 
 
 
-    function handleCourseApplyBtnClick(courseData){
+    function handleCourseApplyBtnClick(courseData) {
         setCurrentClickedCourseData(courseData)
+        setCurrentNavContext("/other")
         router.push("/courseApplyPage")
     }
 
@@ -77,7 +80,7 @@ let {setCurrentClickedCourseData}= useContext(MyContext)
 
                                 <div className="h-full w-full relative">
                                     <div className="custom_gray_glassy_effect h-full w-full absolute top-0 right-0"></div>
-                                    
+
                                     <Image
                                         src={Logo}
                                         height={400}
@@ -101,13 +104,10 @@ let {setCurrentClickedCourseData}= useContext(MyContext)
                                 </p>
 
 
-                                <h1 className='text-2xl text-start px-10 font-extrabold '>Starting At</h1>
-                                <h1 className='text-2xl text-start px-10 font-extrabold mb-3'>{eachData.courseStartingData}</h1>
 
-
-                                <button 
-                                onClick={()=>{handleCourseApplyBtnClick(eachData)}}
-                                className='h-max w-full bg-blue-600 py-2 text-zinc-100 rounded-lg'>Apply</button>
+                                <button
+                                    onClick={() => { handleCourseApplyBtnClick(eachData) }}
+                                    className='h-max w-full bg-blue-600 py-2 text-zinc-100 rounded-lg'>Apply</button>
 
                             </div>
                         )

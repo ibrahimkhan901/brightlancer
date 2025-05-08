@@ -68,7 +68,6 @@ const Courses = () => {
 
 
 
-        <Navbar/>
 
 
 
@@ -81,17 +80,6 @@ const Courses = () => {
 
 
 
-
-        <Footer/>
-
-
-
-        {/* <HomeOurFriends/> */}
-
-
-
-
-        <TermAndDevDetails/>
 
 
 

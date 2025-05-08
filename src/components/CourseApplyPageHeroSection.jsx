@@ -46,7 +46,7 @@ const CourseApplyPageHeroSection = () => {
 
 
             {/* Hero section container */}
-            <div className="   h-[140vh] sm:min-h-[120vh] w-full overflow-x-hidden p-5 relative ">
+            <div className="   h-[140vh] sm:min-h-[120vh] w-full overflow-x-hidden p-5 relative  bg-zinc-900">
 
 
 

@@ -2,13 +2,25 @@
 import React, { useEffect, useState } from 'react'
 import 'remixicon/fonts/remixicon.css'
 import Image from 'next/image'
-import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
-import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
-import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
-import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
-import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
-import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
-import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
+// import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
+// import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
+// import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
+// import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
+// import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
+// import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
+// import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
+
+import {
+    awardTakingImg1,
+    awardTakingImg2,
+    awardTakingImg3,
+    awardTakingImg4,
+    awardTakingImg5,
+    awardTakingImg6,
+    seminarImg1,
+    droneImg1,
+    droneImg2
+} from "../utils/Images.js"
 
 
 
@@ -24,16 +36,27 @@ const Hero = () => {
 
     const [currentSlideValue, setCurrentSlideValue] = useState(0)
 
-    const imagesArray = [
-        AwardTakingImg1,
-        AwardTakingImg2,
-        AwardTakingImg3,
-        AwardTakingImg4,
-        AwardTakingImg5,
-        AwardTakingImg6,
-        AwardTakingImg7
-    ]
+    // const imagesArray = [
+    //     AwardTakingImg1,
+    //     AwardTakingImg2,
+    //     AwardTakingImg3,
+    //     AwardTakingImg4,
+    //     AwardTakingImg5,
+    //     AwardTakingImg6,
+    //     AwardTakingImg7
+    // ]
 
+
+    const imagesArray = [
+        droneImg1,
+        droneImg2,
+        awardTakingImg5,
+        awardTakingImg4,
+        awardTakingImg6,
+        awardTakingImg2,
+        awardTakingImg3,
+        seminarImg1
+    ]
 
 
 
@@ -69,7 +92,7 @@ const Hero = () => {
             } else {
                 setCurrentSlideValue(prev => prev + 100);
             }
-        }, 3000);
+        }, 4500);
 
         return () => clearTimeout(timer);
     }, [currentSlideValue]);
@@ -80,9 +103,8 @@ const Hero = () => {
 
 
 
-    //     useEffect(()=>{
-    // console.log(currentSlideValue)
-    //     },[currentSlideValue])
+
+
 
 
 
@@ -91,7 +113,7 @@ const Hero = () => {
     return (
 
 
-        <div className="min-h-48  flex flex-col-reverse md:flex-row w-full overflow-x-hidden mb-[-20px] md:mb-20">
+        <div className="mt-0 flex flex-col-reverse md:flex-row w-full bg-zinc-900 overflow-x-hidden mb-[-20px] md:mb-20">
 
 
 
@@ -100,11 +122,11 @@ const Hero = () => {
 
 
             {/* Text Section (on bottom for small, left for md+) */}
-            <div className="w-full md:w-1/2 p-5 pt-0 pl-18 hidden md:block ">
-                <h1 className="font-extrabold text-2xl lg:text-3xl mb-5">
-                    Pakistan’s Leading eCommerce Skill-Building Academy
+            <div className="w-full md:w-1/2 p-5 pt-0 pl-18 hidden md:block lg:mt-10 text-zinc-100 ">
+                <h1 className="font-extrabold text-2xl lg:text-4xl mb-5 text-[#fd6a0e]">
+                    Brightlancer Technologies
                 </h1>
-                <p className="font-sans font-medium text-sm lg:text-xl mb-10 text-shadow-zinc-400">
+                <p className="font-sans font-medium text-lg lg:text-xl mb-10 text-shadow-zinc-400">
                     Brightlancers is empowering the youth of Pakistan—especially in Bannu
                     and surrounding regions—to build digital careers, grow online
                     businesses, and become successful entrepreneurs in the world’s
@@ -118,13 +140,13 @@ const Hero = () => {
 
 
             {/* The sliding image container */}
-            <div className=" md:h-56 lg:h-72 w-full md:w-1/2 overflow-hidden p-5 ">
+            <div className="h-max    w-full md:w-1/2 overflow-hidden p-5 mb-10 sm:mb-0  ">
                 <div
-                    className="relative flex items-start justify-start h-max md:h-[500px] w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10">
+                    className="relative flex items-start justify-start h-max  w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10 rounded-lg">
                     {imagesArray.map((src, index) => (
                         <div key={index}
                             style={{ transform: `translateX(${-(currentSlideValue)}%)` }}
-                            className="flex-shrink-0 w-full snap-start relative transition-all duration-700">
+                            className="flex-shrink-0 w-full snap-start relative transition-all duration-1000">
                             <Image
                                 src={src}
                                 alt={`Slide ${index + 1}`}
@@ -141,10 +163,10 @@ const Hero = () => {
 
                     <i
                         onClick={handleLeftIconClick}
-                        className="ri-arrow-right-line   absolute top-1/2 left-2 rotate-180 -translate-y-1/2 z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
+                        className="ri-arrow-right-line   absolute top-1/2 -translate-y-1/2 left-2 rotate-180  z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
                     <i
                         onClick={handleRightIconClick}
-                        className="ri-arrow-right-line   absolute top-1/2 right-2 -translate-y-1/2 z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
+                        className="ri-arrow-right-line   absolute top-1/2 -translate-y-1/2 right-2  z-20 text-zinc-100 border-2 select-none outline-none rounded-full border-zinc-100 text-3xl"></i>
 
                 </div>
             </div>

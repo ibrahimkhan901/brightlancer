@@ -8,6 +8,15 @@ import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
 import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
 import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
 
+import {
+    awardTakingImg1,
+    awardTakingImg2,
+    awardTakingImg3,
+    awardTakingImg4,
+    awardTakingImg5,
+    awardTakingImg6,
+    seminarImg1
+} from "../utils/Images.js"
 
 
 
@@ -19,6 +28,32 @@ import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
 
 
 const HomeMissionAndAchievImg = () => {
+
+
+  const imagesArray = [
+        awardTakingImg2,
+        awardTakingImg3,
+        awardTakingImg4,
+        awardTakingImg5,
+        awardTakingImg6,
+        seminarImg1
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
     return (
         <div className='h-max w-full overflow-x-hidden overflow-y-hidden flex flex-col p-10 py-20 '>
 
@@ -26,7 +61,7 @@ const HomeMissionAndAchievImg = () => {
             <div className="h-max w-full flex flex-wrap justify-center items-center gap-1 mb-5 ">
 
                 {
-                    [AwardTakingImg1, AwardTakingImg2, AwardTakingImg3, AwardTakingImg4, AwardTakingImg5, AwardTakingImg6, AwardTakingImg7].map((eachImage, index) => {
+                    imagesArray.map((eachImage, index) => {
                         return (
                             <Image
                                 src={eachImage}

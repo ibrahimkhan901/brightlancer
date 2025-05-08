@@ -63,12 +63,6 @@ const About = () => {
 
 
 
-      {/* Navbar which is common to home also */}
-      <Navbar />
-
-
-
-
 
 
 
@@ -123,43 +117,6 @@ const About = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <Footer />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <TermAndDevDetails />
 
 
 

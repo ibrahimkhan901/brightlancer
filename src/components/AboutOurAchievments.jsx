@@ -10,6 +10,16 @@ import AwardTakingImg8 from "../../public/images/AwardTaking8.webp"
 import AwardTakingImg9 from "../../public/images/AwardTaking9.webp"
 import Image from 'next/image'
 
+import {
+    awardTakingImg1,
+    awardTakingImg2,
+    awardTakingImg3,
+    awardTakingImg4,
+    awardTakingImg5,
+    awardTakingImg6,
+    seminarImg1
+} from "../utils/Images.js"
+
 
 
 
@@ -35,6 +45,22 @@ const AboutOurAchievments = () => {
         "Brightlancers introduced Degree Programs integrated with eCommerce skills in Pakistan’s education system.",
         "To advance Pakistan's digital economy, Saqib Azhar has been named as the IT Advisor to the Prime Minister of Pakistan, Mr. Shahbaz Sharif."
     ]
+
+
+
+       const imagesArray = [
+            awardTakingImg1,
+            awardTakingImg2,
+            awardTakingImg3,
+            awardTakingImg4,
+            awardTakingImg5,
+            awardTakingImg6,
+            seminarImg1
+        ]
+    
+
+
+
 
 
 
@@ -100,12 +126,12 @@ const AboutOurAchievments = () => {
 
 
 
-
+ 
             {/* The images of achievements section */}
             <div className="h-full w-full  flex items-center flex-wrap justify-center">
 
                 {
-                    [AwardTakingImg1, AwardTakingImg2, AwardTakingImg3, AwardTakingImg4, AwardTakingImg5, AwardTakingImg6, AwardTakingImg7].map((eachImage, index) => {
+                  imagesArray.map((eachImage, index) => {
                         return (
                             // <img
                             //     key={index}

@@ -3,9 +3,33 @@ import React from 'react'
 import AwardTaking8 from '../../public/images/AwardTaking8.webp'
 
 
+import {
+  awardTakingImg3
+} from "../utils/Images.js"
+
+
+
+
+
+
+
+
+
 
 
 const AboutWhoAmI = () => {
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className='h-full w-full overflow-x-hidden' >
 
@@ -16,7 +40,7 @@ const AboutWhoAmI = () => {
 
 
         <Image
-          src={AwardTaking8}
+          src={awardTakingImg3}
           alt='Image in About'
           height={400}
           width={800}
