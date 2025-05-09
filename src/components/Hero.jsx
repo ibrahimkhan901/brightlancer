@@ -93,7 +93,7 @@ const Hero = () => {
     return (
 
 
-        <div className="mt-0 flex flex-col-reverse md:flex-row w-full bg-zinc-900 overflow-x-hidden mb-[-20px] md:mb-20">
+        <div className="mt-0 flex flex-col-reverse lg:flex-row w-full bg-zinc-900 overflow-x-hidden mb-[-20px] md:mb-20">
 
 
 
@@ -102,15 +102,12 @@ const Hero = () => {
 
 
             {/* Text Section (on bottom for small, left for md+) */}
-            <div className="w-full md:w-1/2 p-5  pt-10 pl-18  lg:mt-10 text-zinc-100 ">
+            <div className="w-full lg:w-1/2 p-5  pt-10 pl-18  xl:mt-10 text-zinc-100 ">
                 <h1 className="font-extrabold text-2xl lg:text-4xl mb-5 text-[#fd6a0e]">
                     Brightlancer Technologies
                 </h1>
                 <p className="font-sans font-medium text-lg lg:text-xl mb-10 text-shadow-zinc-400">
-                    Brightlancers is empowering the youth of Pakistan—especially in Bannu
-                    and surrounding regions—to build digital careers, grow online
-                    businesses, and become successful entrepreneurs in the world’s
-                    largest eCommerce markets.
+                Brightlancers is more than just an academy—it's a movement dedicated to unlocking the full potential of young minds in Bannu and across Pakistan. Through cutting-edge eCommerce training, hands-on digital skill development, and real-world business mentorship, we’re equipping the next generation with the tools to launch successful online businesses, secure remote jobs, and thrive in the world’s fastest-growing digital markets. Whether you're a student, freelancer, or aspiring entrepreneur, Brightlancers gives you the platform, guidance, and community to turn your ambition into action and your skills into income.
                 </p>
             </div>
 
@@ -120,13 +117,13 @@ const Hero = () => {
 
 
             {/* The sliding image container */}
-            <div className="h-max    w-full md:w-1/2 overflow-hidden p-5 mb-10 sm:mb-0  ">
+            <div className="h-max    w-full lg:w-1/2 overflow-hidden p-5 mb-10 sm:mb-0  ">
                 <div
                     className="relative flex items-start justify-start h-max  w-full overflow-x-hidden snap-x snap-mandatory scroll-smooth z-10 rounded-lg">
                     {imagesArray.map((src, index) => (
                         <div key={index}
                             style={{ transform: `translateX(${-(currentSlideValue)}%)` }}
-                            className="flex-shrink-0 w-full snap-start relative transition-all duration-1000">
+                            className="flex-shrink-0 w-full snap-start xl:mt-10 relative transition-all duration-1000">
                             <Image
                                 src={src}
                                 alt={`Slide ${index + 1}`}

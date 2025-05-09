@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const Mongodb_Uri= 'mongodb://localhost:27017'
+// const Mongodb_Uri= 'mongodb://localhost:27017'
+const Mongodb_Uri= process.env.MONGODB_URI
 
 if(!Mongodb_Uri){
     throw new Error("The Mongodb uri is not found")

@@ -22,7 +22,10 @@ const CourseApplyForm = () => {
 
 
 
-    let { currentClickedCourseData, setCurrentNavContext } = useContext(MyContext)
+    let { currentClickedCourseData, 
+        setCurrentNavContext,
+        setApplyCourseData
+     } = useContext(MyContext)
     let [loaderVisibiliy, setLoaderVisibility] = useState(null)
     let router = useRouter()
 
@@ -114,7 +117,7 @@ const CourseApplyForm = () => {
             // console.log(result)
 
             let method = "post";
-            let url = "/api/v1/courseApply"
+            let url = "/api/courseApply"
             let data = updatedFormData
             let response = await axiosReqSender(method, url, data);
 
@@ -126,7 +129,9 @@ const CourseApplyForm = () => {
 
             console.log(response.data)
             if (response.data.success == true) {
+                setApplyCourseData(response.data.courseData)
                 alert("Applied Successfully")
+                router.push("/courseApplySuccess")
             }
 
 

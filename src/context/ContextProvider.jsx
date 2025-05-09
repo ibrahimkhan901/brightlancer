@@ -11,6 +11,8 @@ const ContextProvider = ({ children }) => {
 
   let [currentClickedCourseData, setCurrentClickedCourseData]= useState("")
 
+  let [appliedCourseData, setApplyCourseData]= useState(null)
+
 
 
 
@@ -21,7 +23,8 @@ const ContextProvider = ({ children }) => {
   return (
     <MyContext.Provider value={{
       currentNavContext, setCurrentNavContext,
-      currentClickedCourseData,setCurrentClickedCourseData
+      currentClickedCourseData,setCurrentClickedCourseData,
+      appliedCourseData, setApplyCourseData
 
     }}>
 

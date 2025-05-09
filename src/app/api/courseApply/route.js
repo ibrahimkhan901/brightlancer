@@ -170,7 +170,12 @@ try {
 
   console.log(gmailSendingRes)
 
-  return NextResponse.json({ success: true, msg:"check the email in spam if not visible in normal emails" });
+  return NextResponse.json({ success: true, msg:"check the email in spam if not visible in normal emails",
+    courseData:{
+      courseName:newApply.AppliedCourse.courseName,
+      regNo:newApply._id
+    }
+   });
 } catch (error) {
   console.error("Email send failed:", error);
   return NextResponse.json({ success: false, error }, { status: 500 });

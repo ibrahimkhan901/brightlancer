@@ -103,7 +103,7 @@ const ContactOption = () => {
 
             <div className="h-max w-full text-2xl md:text-4xl font-bold text-zinc-900 underline text-center sm:text-start ">
                 <h1>Get In Touch</h1>
-                <h1>We'd love to hear from you</h1>
+                <h1>We'd love to hear you</h1>
             </div>
 
 

@@ -81,7 +81,9 @@ const Navbar = () => {
 
 
 
-
+    function handleMenuCrossBtnClick() {
+            setShowMenu(false)
+    }
 
 
 
@@ -190,7 +192,7 @@ const Navbar = () => {
 
                     <div
                         onClick={handleNavParentDivClick}
-                        className="p-5 flex flex-col gap-y-3">
+                        className="p-16 sm:p-10 flex flex-col gap-y-3 relative">
 
                         {
                             navArray.map((eachNav, index) => {
@@ -204,6 +206,11 @@ const Navbar = () => {
                             })
                         }
 
+
+                        {/* cross button to hide nav panel */}
+                        <div 
+                        onClick={handleMenuCrossBtnClick}
+                        className="w-6 h-6 cursor-pointer flex items-center justify-center text-sm text-orange-500 font-bold absolute top-0 right-10 border-1 border-orange-500 rounded-full">X</div>
 
                         
                     </div>

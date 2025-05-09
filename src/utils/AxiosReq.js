@@ -17,7 +17,7 @@ async function axiosReqSender(method, url, data) {
 
     let response = await axios({
       method,
-      url:`http://localhost:4000${url}`,
+      url:`${url}`,
       data
     })
 
