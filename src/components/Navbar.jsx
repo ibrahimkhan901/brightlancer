@@ -95,16 +95,16 @@ const Navbar = () => {
 
 
     return (
-        <header className=' custom_glassy_effect            w-full overflow-x-hidden fixed top-0 left-0 z-[1000] '>
+        <header className=' custom_glassy_effect            w-full overflow-hidden overflow-x-hidden fixed top-0 left-0 z-[1000] '>
 
-            <div className=' sm:h-24  w-full  flex justify-between px-4 sm:px-7'>
+            <div className='h-20 sm:h-28  w-full  flex justify-between px-4 sm:px-7 '>
 
 
 
 
  
                 {/*  The logo of Navbar */}
-                <div className="h-full w-56 flex items-center select-none">
+                <div className="h-32 w-56 flex items-center select-none mb-5 ">
                   
                   <Image
                     src={Logo}

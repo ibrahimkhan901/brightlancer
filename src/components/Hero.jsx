@@ -2,16 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import 'remixicon/fonts/remixicon.css'
 import Image from 'next/image'
-// import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
-// import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
-// import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
-// import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
-// import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
-// import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
-// import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
-
 import {
-    awardTakingImg1,
     awardTakingImg2,
     awardTakingImg3,
     awardTakingImg4,
@@ -35,17 +26,6 @@ import {
 const Hero = () => {
 
     const [currentSlideValue, setCurrentSlideValue] = useState(0)
-
-    // const imagesArray = [
-    //     AwardTakingImg1,
-    //     AwardTakingImg2,
-    //     AwardTakingImg3,
-    //     AwardTakingImg4,
-    //     AwardTakingImg5,
-    //     AwardTakingImg6,
-    //     AwardTakingImg7
-    // ]
-
 
     const imagesArray = [
         droneImg1,
@@ -122,7 +102,7 @@ const Hero = () => {
 
 
             {/* Text Section (on bottom for small, left for md+) */}
-            <div className="w-full md:w-1/2 p-5 pt-0 pl-18 hidden md:block lg:mt-10 text-zinc-100 ">
+            <div className="w-full md:w-1/2 p-5  pt-10 pl-18  lg:mt-10 text-zinc-100 ">
                 <h1 className="font-extrabold text-2xl lg:text-4xl mb-5 text-[#fd6a0e]">
                     Brightlancer Technologies
                 </h1>

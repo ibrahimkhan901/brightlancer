@@ -22,6 +22,15 @@ const bilalSirImg = "https://res.cloudinary.com/dop329ono/image/upload/v17467119
 const droneImg1= "https://res.cloudinary.com/dop329ono/image/upload/v1746711943/testImg2_z6g7rp.jpg"
 const droneImg2="https://res.cloudinary.com/dop329ono/image/upload/v1746711926/droneImage_imkuun.jpg"
 const studentTestImg1= "https://res.cloudinary.com/dop329ono/image/upload/v1746711941/testImg1_m6gtki.jpg"
+const classBannerImage= "https://res.cloudinary.com/dop329ono/image/upload/v1746711926/classImg1_hdndhq.jpg"
+const classBannerImage2= "https://res.cloudinary.com/dop329ono/image/upload/v1746711925/classImg2_sa92e2.jpg"
+
+
+
+
+
+
+
 
 export {
     seminarImg1,
@@ -44,5 +53,7 @@ export {
     qaiserSirImg,
     droneImg1,
     droneImg2,
-    studentTestImg1
+    studentTestImg1,
+    classBannerImage,
+    classBannerImage2
 }

@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-
+import {
+    qaiserSirImg,
+    bilalSirImg
+} from '@/utils/Images.js'
 const AboutExecutiveMsg = () => {
     return (
         <div className='min-h-[100vh] w-full p-10'>
@@ -29,13 +32,13 @@ const AboutExecutiveMsg = () => {
 
                     <div className="h-max w-1/2 flex  mb-10">
                         <Image
-                            src='https://www.enablers.org/assets-app/img/about-us-page/saqib.jpg'
+                            src={qaiserSirImg}
                             height={400}
                             width={800}
                             alt='Brightlacner Teacher image'
                         />
                         <div className="h-max w-max mt-28 flex flex-col items-end">
-                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>Saqib Azhar</h1>
+                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>QAISER SIR</h1>
                         </div>
 
                     </div>
@@ -53,14 +56,14 @@ const AboutExecutiveMsg = () => {
 
                     <div className="h-max w-1/2 flex  mb-10">
                         <Image
-                            src='https://www.enablers.org/assets-app/img/about-us-page/faisal.jpg'
+                            src={bilalSirImg}
                             height={400}
                             width={800}
                             alt='Brightlacner Teacher image'
                         />
 
                         <div className="h-max w-max mt-28 flex flex-col items-end">
-                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>Faisal Azhar</h1>
+                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>BILAL SIR</h1>
                         </div>
 
                     </div>

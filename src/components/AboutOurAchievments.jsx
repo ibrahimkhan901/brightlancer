@@ -1,17 +1,7 @@
 import React from 'react'
-import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
-import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
-import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
-import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
-import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
-import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
-import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
-import AwardTakingImg8 from "../../public/images/AwardTaking8.webp"
-import AwardTakingImg9 from "../../public/images/AwardTaking9.webp"
 import Image from 'next/image'
 
 import {
-    awardTakingImg1,
     awardTakingImg2,
     awardTakingImg3,
     awardTakingImg4,
@@ -49,11 +39,10 @@ const AboutOurAchievments = () => {
 
 
        const imagesArray = [
-            awardTakingImg1,
+           awardTakingImg5,
+           awardTakingImg3,
             awardTakingImg2,
-            awardTakingImg3,
             awardTakingImg4,
-            awardTakingImg5,
             awardTakingImg6,
             seminarImg1
         ]

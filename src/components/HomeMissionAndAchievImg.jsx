@@ -1,15 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import AwardTakingImg1 from "../../public/images/AwardTaking1.webp"
-import AwardTakingImg2 from "../../public/images/AwardTaking2.webp"
-import AwardTakingImg3 from "../../public/images/AwardTaking3.webp"
-import AwardTakingImg4 from "../../public/images/AwardTaking4.webp"
-import AwardTakingImg5 from "../../public/images/AwardTaking5.webp"
-import AwardTakingImg6 from "../../public/images/AwardTaking6.webp"
-import AwardTakingImg7 from "../../public/images/AwardTaking7.webp"
+
 
 import {
-    awardTakingImg1,
     awardTakingImg2,
     awardTakingImg3,
     awardTakingImg4,
@@ -30,7 +23,7 @@ import {
 const HomeMissionAndAchievImg = () => {
 
 
-  const imagesArray = [
+    const imagesArray = [
         awardTakingImg2,
         awardTakingImg3,
         awardTakingImg4,
@@ -51,14 +44,14 @@ const HomeMissionAndAchievImg = () => {
 
 
 
-    
+
 
 
     return (
         <div className='h-max w-full overflow-x-hidden overflow-y-hidden flex flex-col p-10 py-20 '>
 
             {/* Photo gallary which contain all the achievements of brighlancers */}
-            <div className="h-max w-full flex flex-wrap justify-center items-center gap-1 mb-5 ">
+            <div className="h-max w-full flex flex-wrap justify-center items-center gap-2 mb-5 ">
 
                 {
                     imagesArray.map((eachImage, index) => {
@@ -69,7 +62,7 @@ const HomeMissionAndAchievImg = () => {
                                 height={400}
                                 width={800}
                                 key={index}
-                                className='h-max w-full sm:w-[40%] md:w-[30%] rounded-lg '
+                                className='h-auto w-auto sm:w-[40%] md:w-[30%] rounded-lg '
                             />
                         )
                     })
@@ -90,7 +83,7 @@ const HomeMissionAndAchievImg = () => {
 
                     <h3 className='text-3xl sm:text-4xl mb-5'>OUR MISSION</h3>
                     <p className='text-md md:text-lg font-light'>Brightlancers is committed to making Pakistan—especially the youth of Bannu—a powerful force in the global eCommerce industry. Our team is fully focused on helping individuals become skilled entrepreneurs and work on international platforms like Amazon and Shopify. We aim to create thousands of digital earning opportunities through practical training and mentorship.</p>
-                  
+
                 </div>
 
 

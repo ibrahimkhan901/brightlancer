@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import AwardTaking8 from '../../public/images/AwardTaking8.webp'
 
 
 import {
-  awardTakingImg3
+  awardTakingImg5
 } from "../utils/Images.js"
 
 
@@ -40,7 +39,7 @@ const AboutWhoAmI = () => {
 
 
         <Image
-          src={awardTakingImg3}
+          src={awardTakingImg5}
           alt='Image in About'
           height={400}
           width={800}
