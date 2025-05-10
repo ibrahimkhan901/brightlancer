@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TermAndDevDetails from "@/components/TermAndDevDetails";
+import { Analytics } from '@vercel/analytics/react'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +27,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Brightlancer Academy – Empowering E-Commerce Excellence in Bannu',
   description: 'Brightlancer Academy offers comprehensive e-commerce training programs in Bannu, Pakistan...',
-  keywords: ['Brightlancer Academy', 'E-commerce Training Bannu',"Brightlancers ecommerce","Brightlancers bannu", "Ecommerce Academy in bannu" , "Brightlancer", "Brightlancer website" ],
+  keywords: ['Brightlancer Academy', 'E-commerce Training Bannu', "Brightlancers ecommerce", "Brightlancers bannu", "Ecommerce Academy in bannu", "Brightlancer", "Brightlancer website"],
 
   authors: [
     { name: 'Brightlancer Academy', url: 'https://www.facebook.com/...' },
@@ -85,7 +87,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="vLF-UwNqWUpkZBAOesVAQcPUKV6dq8U1-HrDgbSAvS4" />
+        <meta name="google-site-verification" content="vLF-UwNqWUpkZBAOesVAQcPUKV6dq8U1-HrDgbSAvS4" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -94,18 +96,32 @@ export default function RootLayout({ children }) {
 
         <ContextProvider>
 
-          <Navbar/>
+
+
+
+
+
+          <Navbar />
 
 
           {children}
 
 
-          <Footer/>
+          <Footer />
 
-          <TermAndDevDetails/>
+          <TermAndDevDetails />
+
+
+
+
 
 
         </ContextProvider>
+
+
+
+        {/* this is for analytics */}
+        <Analytics />
 
       </body>
     </html>
