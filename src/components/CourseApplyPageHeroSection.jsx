@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 
 
@@ -46,7 +47,7 @@ const CourseApplyPageHeroSection = () => {
 
 
             {/* Hero section container */}
-            <div className=" h-[140vh]  sm:min-h-[120vh] w-full overflow-x-hidden p-5 relative  bg-zinc-900">
+            <div className="   sm:min-h-[120vh] w-full overflow-x-hidden p-5 relative  bg-zinc-900">
 
 
 
@@ -162,10 +163,15 @@ const CourseApplyPageHeroSection = () => {
 
                 {/* THis div is just for shading of blackish theme */}
                 <div className="custom_gray_glassy_effect              h-full w-full absolute top-0 right-0 z-[200]"></div>
+
                 {/* background image */}
-                <img
+                <Image
+                    src="https://imgs.search.brave.com/2-qGPZwGY3pHUpZSapdTq0AjCZDvFYAF647ogsFECWs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2EzL2E2/LzAxL2EzYTYwMWQ4/ODQ4MmJjMmExZjYy/YTMwNzI5NGFlNWQz/LmpwZw"
+                    height={300}
+                    width={800}
+                    alt='background image'
                     className='h-full w-full absolute top-0 right-0 z-[100]'
-                    src="https://imgs.search.brave.com/2-qGPZwGY3pHUpZSapdTq0AjCZDvFYAF647ogsFECWs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2EzL2E2/LzAxL2EzYTYwMWQ4/ODQ4MmJjMmExZjYy/YTMwNzI5NGFlNWQz/LmpwZw" alt="" />
+                />
 
 
 

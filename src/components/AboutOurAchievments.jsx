@@ -57,7 +57,7 @@ const AboutOurAchievments = () => {
 
 
     return (
-        <div className='min-h-[100vh] w-full overflow-x-hidden p-10 '>
+        <div className=' w-full overflow-x-hidden p-10 '>
 
 
 
@@ -142,7 +142,7 @@ const AboutOurAchievments = () => {
 
 
             {/* Other achievement  */}
-            <div className="min-h-[100vh] w-full flex flex-col-reverse lg:flex-row justify-center lg:justify-start text-center sm:text-start sm:p-10">
+            <div className=" w-full flex flex-col-reverse lg:flex-row justify-center lg:justify-start text-center sm:text-start sm:p-10">
 
 
                 <div className="h-full w-full p-6">

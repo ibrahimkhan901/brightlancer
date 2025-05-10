@@ -36,6 +36,18 @@ const scienceAndTech="https://upload.wikimedia.org/wikipedia/en/f/f4/UST_Bannu.j
 const DistrictYouthOffice="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQypkrMYblFc684MuuNv1sAK2RAtE0q6UjpuQ&s"
 const GovtKPK="https://upload.wikimedia.org/wikipedia/commons/c/c9/KP_logo.png"
 
+const GPGCwomenProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895572/GPGCWomenProject_bnxesw.jpg"
+const UstbProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895571/USTBproject_has04g.jpg"
+const districtYouthProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895571/districtYouthproject_wrdpxn.jpg"
+const navttcIslProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895571/NavttcIsl_dqmuyq.jpg"
+const qabilBanoProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895571/QabilBanoProject_gcad14.jpg"
+const degreeCollageProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895571/DegreeCollageProject_aekn85.jpg"
+const cpecProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895568/CPEC_beqkdq.jpg"
+const bajaurEcommerceProject="https://res.cloudinary.com/dop329ono/image/upload/v1746895568/BajaurEcomerceProject_dqwmtf.jpg"
+
+
+
+
 
 
 
@@ -74,5 +86,13 @@ export {
     securityExcCommision,
     scienceAndTech,
     DistrictYouthOffice,
-    GovtKPK
+    GovtKPK,
+    GPGCwomenProject,
+    UstbProject,
+    districtYouthProject,
+    navttcIslProject,
+    qabilBanoProject,
+    degreeCollageProject,
+    cpecProject,
+    bajaurEcommerceProject
 }

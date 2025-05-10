@@ -19,7 +19,7 @@ const AboutOtherPart = () => {
 
 
     return (
-        <div className='min-h-[100vh] w-full overflow-x-hidden p-5 md:p-10 mb-10 '>
+        <div className=' w-full overflow-x-hidden p-5 md:p-10 mb-10 '>
 
 
 
@@ -40,7 +40,7 @@ const AboutOtherPart = () => {
 
 
 
-            <div className="min-h-[50vh] py-10 lg:h-[100vh] w-full  flex flex-col items-center justify-center bg-zinc-300 text-2xl sm:text-3xl">
+            <div className=" py-10 lg:h-[100vh] w-full  flex flex-col items-center justify-center bg-zinc-300 text-2xl sm:text-3xl">
                 <h1 className='text-3xl sm:text-4xl text-[#f05c2f] mb-7 font-extrabold'>OUR CAMPUSES</h1>
                 <p className='w-full px-10 md:text-3xl lg:text-4xl text-center mt-5 text-lg sm:text-2xl'>We have one of the fastest-growing chains of campuses across Pakistan and expanding internationally, empowering youth through modern eCommerce education.</p>
                 <p
@@ -163,7 +163,7 @@ const AboutOtherPart = () => {
 
 
 
-            <div className="min-h-[100vh] w-full overflow-x-hidden p-10 mt-10 text-center md:text-start">
+            <div className=" w-full overflow-x-hidden p-10 mt-10 text-center md:text-start">
                 <h1 className='text-2xl md:text-3xl lg:text-4xl text-[#f05c2f] mb-7 font-extrabold'>COMMINITY IMPACT</h1>
                 <p className='font-medium text-md text-center md:text-start md:text-xl mt-5'>Thousands of individuals have benefitted from Brightlancers' practical training and 100+ skill-based courses designed to equip youth with real eCommerce and freelancing skills. In response to high unemployment, Brightlancers introduced accessible, affordable, and hands-on learning opportunities that have empowered many to launch their careers as virtual assistants, freelancers, and online business owners.</p>
                 <p className='font-medium text-md text-center md:text-start md:text-xl mt-5'>A new generation is now under training—dedicated to transforming Pakistan, especially regions like Bannu, into a powerful eCommerce hub.</p>

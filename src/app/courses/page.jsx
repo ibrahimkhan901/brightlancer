@@ -1,10 +1,7 @@
 import React from 'react'
 import CoursesHeroSection from '../../components/CoursesHeroSection'
-import Navbar from '../../components/Navbar'
 import CoursesCards from '../../components/CoursesCards'
-import Footer from '../../components/Footer.jsx'
-import HomeOurFriends from '../../components/HomeOurFriends.jsx'
-import TermAndDevDetails from '../../components/TermAndDevDetails.jsx'
+
 
 
 

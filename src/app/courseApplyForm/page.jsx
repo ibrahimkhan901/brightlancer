@@ -5,7 +5,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import axiosReqSender from '../../utils/AxiosReq';
 import MyContext from '../../context/MyContext';
-// import { coursesDataArray } from '../utils/CoursesDataArray';
 import { useRouter } from 'next/navigation';
 import Loader from '@/components/Loader';
 

@@ -1,13 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
 import ServicesHeroSection from '../../components/ServicesHeroSection'
 import ServicesListCards from '../../components/ServicesListCards'
 import ServicesDisclaimerAndWorks from '../../components/ServicesDisclaimerAndWorks'
-import Footer from '../../components/Footer'
-import HomeOurFriends from '../../components/HomeOurFriends'
-import TermAndDevDetails from '../../components/TermAndDevDetails'
-
-
 
 
 

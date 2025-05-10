@@ -1,16 +1,9 @@
 import React from 'react'
-import Navbar from '../../components/Navbar.jsx'
 import AboutWhoAmI from '../../components/AboutWhoAmI.jsx'
 import AboutProject from '../../components/AboutProject.jsx'
 import AboutExecutiveMsg from '../../components/AboutExecutiveMsg.jsx'
 import AboutOurAchievments from '../../components/AboutOurAchievments.jsx'
 import AboutOtherPart from '../../components/AboutOtherPart.jsx'
-import Footer from '../../components/Footer.jsx'
-import HomeOurFriends from '../../components/HomeOurFriends.jsx'
-import TermAndDevDetails from '../../components/TermAndDevDetails.jsx'
-
-
-
 
 
 

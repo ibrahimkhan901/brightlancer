@@ -53,10 +53,10 @@ const HomeOffer = () => {
 
 
     return (
-        <div className='min-h-[100vh] w-full overflow-x-hidden py-10 px-5 md:px-20 '>
+        <div className=' w-full overflow-x-hidden py-10 px-5 md:px-20 '>
 
             {/* Heading of offer section also with  its little explanation */}
-            <div className="h-[20vh] w-full mb-5">
+            <div className=" w-full mb-5">
                 <h1 className='text-2xl md:text-4xl text-orange-500 text-center md:text-start mb-5 md:mb-0 font-extrabold'>WHAT'S WE OFFER</h1>
                 <p className='text-xl text-zinc-700 font-medium pl-2 text-center sm:text-start'>We’re a team of passionate, dedicated people who have one overreaching goal – Your Success is Our Success</p>
             </div>

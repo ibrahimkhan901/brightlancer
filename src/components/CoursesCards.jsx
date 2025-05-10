@@ -88,9 +88,6 @@ const CoursesCards = () => {
                                         alt='Background image of course card'
                                         className=' w-full mb-5 rounded-md'
                                     />
-                                    {/* <img
-                                        className='h-max w-full mb-5 rounded-md'
-                                        src="https://imgs.search.brave.com/OP5tmI1gaTotwGLRpaIsEemIgsuPKRgUrmyiwLh79SA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS82/MmY0OWE4OTBmY2Yu/anBn" alt="" /> */}
                                     <h1
                                         className='h-max w-[90%] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 font-bold text-3xl text-orange-100'>
                                         {eachData.courseName}

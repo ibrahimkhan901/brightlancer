@@ -1,15 +1,8 @@
 import AboutProject from '@/components/AboutProject'
-import Footer from '../components/Footer'
 import Hero from '../components/Hero'
-import HomeAsSeenAs from '../components/HomeAsSeenAs'
 import HomeMissionAndAchievImg from '../components/HomeMissionAndAchievImg'
 import HomeNetworkCards from '../components/HomeNetworkCards'
 import HomeOffer from '../components/HomeOffer'
-import HomeOurFriends from '../components/HomeOurFriends'
-import HomeProject from '../components/HomeProject'
-import Navbar from '../components/Navbar'
-import TermAndDevDetails from '../components/TermAndDevDetails'
-import MyContext from '../context/MyContext'
 
 
 
@@ -95,11 +88,11 @@ const Home = () => {
 
 
       {/* This compoennt contain all the projects which is done by brightlancers */}
-      
-      
+
+
       {/* <HomeProject /> */}
 
-     <AboutProject/>
+      <AboutProject />
 
 
 

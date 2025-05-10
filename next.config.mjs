@@ -9,7 +9,8 @@ const nextConfig = {
       "d2l63a9diffym2.cloudfront.net",
       "i.dawn.com",
       "upload.wikimedia.org",
-      "kp.gov.pk"
+      "kp.gov.pk",
+      "imgs.search.brave.com"
     ],
   },
 };

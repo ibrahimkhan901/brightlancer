@@ -4,9 +4,23 @@ import {
     qaiserSirImg,
     bilalSirImg
 } from '@/utils/Images.js'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const AboutExecutiveMsg = () => {
     return (
-        <div className='min-h-[100vh] w-full p-10 mt-10'>
+        <div className=' w-full p-10 mt-10'>
 
 
 
@@ -23,7 +37,7 @@ const AboutExecutiveMsg = () => {
 
 
             {/* The photo and messeges */}
-            <div className="min-h-[100vh] w-full flex flex-col sm:flex-row p-3 lg:p-10  ">
+            <div className="min-h-[100vh] w-full flex flex-col sm:flex-row p-3 lg:p-10 justify-center items-center  ">
 
 
 

@@ -1,12 +1,6 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
 import ContactOption from '../../components/ContactOption'
 import ContactSocialLinks from '../../components/ContactSocialLinks'
-import Footer from '../../components/Footer'
-import HomeOurFriends from '../../components/HomeOurFriends'
-import TermAndDevDetails from '../../components/TermAndDevDetails'
-
-
 
 
 

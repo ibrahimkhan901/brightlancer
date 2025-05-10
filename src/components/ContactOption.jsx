@@ -9,14 +9,7 @@ const ContactOption = () => {
 
 
     function handlePhoneNoCopyBtnClick() {
-        try {
-
-            navigator.clipboard.writeText("+92 337 9863424")
-
-
-        } catch (err) {
-            throw new Error("Phone number is not copied!", err)
-        }
+        navigator.clipboard.writeText("+92 337 9863424")
     }
 
 
@@ -26,14 +19,7 @@ const ContactOption = () => {
 
 
     function handleWhatsappPhoneNoCopyBtnClick() {
-        try {
-
-            navigator.clipboard.writeText("+92 337 9863424")
-
-
-        } catch (err) {
-            throw new Error("Phone number is not copied!", err)
-        }
+        navigator.clipboard.writeText("+92 337 9863424")
     }
 
 
@@ -42,14 +28,7 @@ const ContactOption = () => {
 
 
     function handleEmailCopyBtnClick() {
-        try {
-
-            navigator.clipboard.writeText("officialbrightlancer@gmail.com")
-
-
-        } catch (err) {
-            throw new Error("Email address is not copied!", err)
-        }
+        navigator.clipboard.writeText("officialbrightlancer@gmail.com")
     }
 
 
@@ -66,13 +45,7 @@ const ContactOption = () => {
 
 
     function handleWhatsappChatBtnClick() {
-        try {
-
-            window.open("https://wa.me/923379863424")
-
-        } catch (err) {
-            throw new Error("The whatsapp chat is not opened", err)
-        }
+        window.open("https://wa.me/923379863424")
     }
 
 
@@ -80,13 +53,7 @@ const ContactOption = () => {
 
 
     function handleEmailMessageBtnClick() {
-        try {
-
-            window.location.href="mailto:officialbrightlancer@gmail.com?subject=Hello&body=I%20want%20to%20ask%20something"
-
-        } catch (err) {
-            throw new Error("The Email chat is not opened", err)
-        }
+        window.location.href = "mailto:officialbrightlancer@gmail.com?subject=Hello&body=I%20want%20to%20ask%20something"
     }
 
 
@@ -97,7 +64,7 @@ const ContactOption = () => {
 
 
     return (
-        <div className='min-h-[20vh] w-full overflow-x-hidden p-5 sm:p-10 mt-20'>
+        <div className=' w-full overflow-x-hidden p-5 sm:p-10 mt-20'>
 
 
 

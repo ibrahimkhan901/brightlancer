@@ -47,7 +47,7 @@ const AboutWhoAmI = () => {
         />
 
 
-        <div className="bg-[#ee7020] h-full w-full md:w-1/2 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl text-zinc-800 font-bold p-10 text-center">
+        <div className="bg-[#ee7020] h-full w-full md:w-1/2 flex items-center justify-center text-2xl md:text-3xl lg:text-4xl text-zinc-900 font-bold p-10 text-center">
           Pakistan's Best Ecommerce Plateform
         </div>
 
@@ -65,7 +65,7 @@ const AboutWhoAmI = () => {
 
 
       {/* who am i section */}
-      <div className="min-h-[50vh] w-full flex flex-col sm:flex-row gap-x-10 text-center sm:text-start">
+      <div className=" w-full flex flex-col sm:flex-row gap-x-10 text-center sm:text-start">
 
         <div className="h-full w-full sm:w-[35%] p-5 text-[#f05c2f] font-extrabold text-4xl flex justify-center sm:justify-end">WHO WE ARE</div>
         <div className="h-full w-full sm:w-[75%] p-5 text-xl font-medium">Brightlancers is on a mission to empower Pakistan—starting from Bannu—as a rising force in the global eCommerce landscape. Our team is fully dedicated to helping individuals unlock their entrepreneurial potential and succeed on international platforms like Amazon, Shopify, and beyond.
