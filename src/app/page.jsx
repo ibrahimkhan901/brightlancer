@@ -1,3 +1,4 @@
+import AboutProject from '@/components/AboutProject'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import HomeAsSeenAs from '../components/HomeAsSeenAs'
@@ -38,7 +39,7 @@ const Home = () => {
 
 
   return (
-    <div className='h-full w-full overflow-x-hidden pb-0 pt-0 sm:pt-32' >
+    <div className='h-full w-full overflow-x-hidden pb-0 ' >
 
 
 
@@ -94,8 +95,11 @@ const Home = () => {
 
 
       {/* This compoennt contain all the projects which is done by brightlancers */}
-      <HomeProject />
+      
+      
+      {/* <HomeProject /> */}
 
+     <AboutProject/>
 
 
 

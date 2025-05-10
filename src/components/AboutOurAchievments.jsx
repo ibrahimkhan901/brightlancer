@@ -63,7 +63,7 @@ const AboutOurAchievments = () => {
 
 
             {/* Heading */}
-            <div className="text-3xl text-center md:text-start font-bold  lg:text-4xl  text-[#f05c2f] mb-10 ">
+            <div className="text-3xl text-center md:text-start  lg:text-4xl  text-[#f05c2f] mb-10 font-extrabold ">
                 <div className="  md:text-4xl">OUR</div>
                 <div className="  md:text-4xl">ACHIEVEMENTS</div>
             </div>
@@ -88,13 +88,7 @@ const AboutOurAchievments = () => {
 
                         Recently, Brightlancers has also received international recognition from prestigious bodies like the United Nations Youth Program for our significant impact on the youth of Pakistan, helping them step into the world of eCommerce and digital entrepreneurship.
                     </p>
-                    {/* <div className="h-full w-full flex  flex-wrap justify-center">
-                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
-                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
-                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
-                        <img className='h-24 w-max' src="https://www.enablers.org/public/assets-app/img/about-us-page/logos/2021.png" alt="" />
-
-                    </div> */}
+                    
                 </div>
 
 
@@ -122,11 +116,7 @@ const AboutOurAchievments = () => {
                 {
                   imagesArray.map((eachImage, index) => {
                         return (
-                            // <img
-                            //     key={index}
-                            //     className='h-max w-full sm:w-[50%] md:w-[30%] '
-                            //     src={eachImage} alt="" />
-                        
+                           
                             <Image  
                             key={index}
                             src={eachImage}
@@ -152,7 +142,7 @@ const AboutOurAchievments = () => {
 
 
             {/* Other achievement  */}
-            <div className="min-h-[100vh] w-full flex flex-col-reverse lg:flex-row justify-center lg:justify-start">
+            <div className="min-h-[100vh] w-full flex flex-col-reverse lg:flex-row justify-center lg:justify-start text-center sm:text-start sm:p-10">
 
 
                 <div className="h-full w-full p-6">

@@ -22,10 +22,19 @@ const bilalSirImg = "https://res.cloudinary.com/dop329ono/image/upload/v17467119
 const droneImg1= "https://res.cloudinary.com/dop329ono/image/upload/v1746711943/testImg2_z6g7rp.jpg"
 const droneImg2="https://res.cloudinary.com/dop329ono/image/upload/v1746711926/droneImage_imkuun.jpg"
 const studentTestImg1= "https://res.cloudinary.com/dop329ono/image/upload/v1746711941/testImg1_m6gtki.jpg"
-const classBannerImage= "https://res.cloudinary.com/dop329ono/image/upload/v1746711926/classImg1_hdndhq.jpg"
-const classBannerImage2= "https://res.cloudinary.com/dop329ono/image/upload/v1746711925/classImg2_sa92e2.jpg"
+const classBannerImage= "https://res.cloudinary.com/dop329ono/image/upload/v1746867162/classBannerImg2_fyspfx.jpg"
+const classBannerImage2= "https://res.cloudinary.com/dop329ono/image/upload/v1746867162/classBannerImg_jelpv0.jpg"
 
-
+const navttvIsl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfU1gOQK_YNrp6i0oqd_Ljq065ySGd9Uo8g&s"
+const tradeTestingBoard="https://play-lh.googleusercontent.com/opxR-AekOymWbmopKys-gKAHwUYqsqsOxfC1Gp-Yk4u3w2iwxprVHtod4qQ_BqDPDw"
+const pakistanSoftwareExpertBoard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWwRdsbS5NYeJ3ZkW8HG_RImQY---fzSCCw&s"
+const pakistanEngCouncil="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMDsB-L6qbT4UN49hXQa26_SH1dRmXJTuv_g&s"
+const districtAdmin="https://kp.gov.pk/uploads/2023/02/Deputy_Commissioner_Bannu.png"
+const fbr="https://d2l63a9diffym2.cloudfront.net/teams/hUuwxm54IFwBtOudsTDdW1TkrTKCoiC94DIKNQO6.jpeg"
+const securityExcCommision="https://i.dawn.com/2012/09/secp_670.jpg"
+const scienceAndTech="https://upload.wikimedia.org/wikipedia/en/f/f4/UST_Bannu.jpg"
+const DistrictYouthOffice="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQypkrMYblFc684MuuNv1sAK2RAtE0q6UjpuQ&s"
+const GovtKPK="https://upload.wikimedia.org/wikipedia/commons/c/c9/KP_logo.png"
 
 
 
@@ -55,5 +64,15 @@ export {
     droneImg2,
     studentTestImg1,
     classBannerImage,
-    classBannerImage2
+    classBannerImage2,
+    navttvIsl,
+    tradeTestingBoard,
+    pakistanSoftwareExpertBoard,
+    districtAdmin,
+    pakistanEngCouncil,
+    fbr,
+    securityExcCommision,
+    scienceAndTech,
+    DistrictYouthOffice,
+    GovtKPK
 }

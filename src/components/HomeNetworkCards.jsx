@@ -10,10 +10,10 @@ const HomeNetworkCards = () => {
 
 
     return (
-        <div className='min-h-96 w-full overflow-x-hidden flex flex-col items-center px-10 pt-0 sm:pt-10 '>
+        <div className='min-h-96 w-full overflow-x-hidden flex flex-col items-center px-10 pt-10 '>
 
 
-            <h1 className='font-bold  text-2xl md:text-3xl  lg:text-4xl text-center sm:text-start'>
+            <h1 className='  text-2xl md:text-3xl  lg:text-4xl text-center sm:text-start text-orange-400 font-extrabold'>
                 PAKISTAN'S LARGEST ECOMMERCE NETWORK</h1>
 
             <div className="h-max w-full px-0 py-10 flex flex-wrap justify-center gap-0">

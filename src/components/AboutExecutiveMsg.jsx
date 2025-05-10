@@ -6,13 +6,13 @@ import {
 } from '@/utils/Images.js'
 const AboutExecutiveMsg = () => {
     return (
-        <div className='min-h-[100vh] w-full p-10'>
+        <div className='min-h-[100vh] w-full p-10 mt-10'>
 
 
 
 
             {/* heading */}
-            <div className="text-2xl md:text-4xl font-bold text-[#f05c2f] mb-5">
+            <div className="text-2xl md:text-4xl  text-[#f05c2f] mb-5 font-extrabold text-center sm:text-start">
                 EXECUTIVE MESSAGE
             </div>
 
@@ -28,17 +28,17 @@ const AboutExecutiveMsg = () => {
 
 
                 {/* CEO image and photo */}
-                <div className="h-max w-full sm:w-1/2  lg:px-10 mb-10 p-6">
+                <div className="h-max w-full sm:w-1/2  lg:px-10 mb-10 p-6 flex justify-center flex-col">
 
-                    <div className="h-max w-1/2 flex  mb-10">
+                    <div className="h-max w-full sm:w-1/2  mb-10 flex justify-center items-center flex-col">
                         <Image
                             src={qaiserSirImg}
                             height={400}
                             width={800}
                             alt='Brightlacner Teacher image'
                         />
-                        <div className="h-max w-max mt-28 flex flex-col items-end">
-                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>QAISER SIR</h1>
+                        <div className="h-max w-full  flex justify-center items-center p-2 bg-[#f05c2f]">
+                            <h1 className='h-max w-max textlg  sm:text-xl bg-[#f05c2f] px-2 text-zinc-100'>ENGR QAISER IQBAL</h1>
                         </div>
 
                     </div>
@@ -54,7 +54,7 @@ const AboutExecutiveMsg = () => {
 
                 <div className="h-max w-full sm:w-1/2  lg:px-10 mb-10 p-6">
 
-                    <div className="h-max w-1/2 flex  mb-10">
+                    <div className="h-max w-full sm:w-1/2  mb-10 flex justify-center items-center flex-col ">
                         <Image
                             src={bilalSirImg}
                             height={400}
@@ -62,10 +62,9 @@ const AboutExecutiveMsg = () => {
                             alt='Brightlacner Teacher image'
                         />
 
-                        <div className="h-max w-max mt-28 flex flex-col items-end">
-                            <h1 className='h-max w-max text-2xl bg-[#f05c2f] px-2 text-zinc-100'>BILAL SIR</h1>
+                        <div className="h-max w-full  flex justify-center items-center p-2 bg-[#f05c2f]">
+                            <h1 className='h-max w-max text-lg  sm:text-xl bg-[#f05c2f] px-2 text-zinc-100'>ENGR QAISER IQBAL</h1>
                         </div>
-
                     </div>
 
                     <p className='text-sm md:text-[15px] md:text-lg text-center md:text-start '>I strongly believe that the youth of Pakistan have incredible potential—but many face challenges when it comes to choosing the right career path. At Brightlancers, our mission is to guide them with clarity and purpose, helping them align their skills with real opportunities in the digital world. I’m confident that our youth are the driving force behind Pakistan’s future in the global eCommerce and tech industry, and it’s our responsibility to empower and support them in every step of their journey.</p>

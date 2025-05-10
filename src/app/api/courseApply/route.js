@@ -6,7 +6,8 @@ import { Resend } from 'resend';
 import { generateEmailTemplate } from '@/utils/emailTemplate';
 import nodemailer from 'nodemailer'
 import { NextResponse } from 'next/server';
-
+import GmailSmtpEmailing from '@/utils/GmailSmtpEmailing';
+import ResendEmailing from '@/utils/ResendEmailing';
 
 // Todos
 
@@ -44,14 +45,14 @@ const CourseApplySchema = z.object({
 
 
 
-// shift the user and key to env later
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "ikkhan007m@gmail.com",
-    pass: "qivu psqx gmap mtyc",
-  },
-});
+// // shift the user and key to env later
+// const transporter = nodemailer.createTransport({
+//   service: "gmail",
+//   auth: {
+//     user: "ikkhan007m@gmail.com",
+//     pass: "qivu psqx gmap mtyc",
+//   },
+// });
 
 
 
@@ -121,7 +122,9 @@ export async function POST(req) {
 
 
 
-//   return Response.json({success:true, newApply},{status:200})
+  return NextResponse.json({success:true , msg:"The Apply for course is registered", courseApplyData:newApply})
+
+
 
 
 
@@ -129,57 +132,37 @@ export async function POST(req) {
 
 // resend want tha domain so we for now neglect it 
 
-//   try {
-//     const subject = "Course subscription payment";
-//     const html = generateEmailTemplate(username, presentCourse);
-
-//     const emailResp = await resend.emails.send({
-//       from: 'Brightlancers <onboarding@resend.dev>',
-//       to: email,
-//       subject,
-//       html,
-//     });
+  // try {
 
 
-//     if(!emailResp?.data){
-//         return Response.json({success:false, reason:"Email is not send successfully"})
-//     }
+  //   let ResendEmailingResponse= await ResendEmailing(username, email, presentCourse)
 
-//     return Response.json({ success: true, data: emailResp }, { status: 201 });
+  //   if(!ResendEmailingResponse?.data){
+  //       return Response.json({success:false, reason:"Email is not send successfully"})
+  //   }
 
-//   } catch (error) {
-//     console.log(error)
-//     return Response.json({ success: false, msg: "User created, but email failed", error }, { status: 500 });
-//   }
+  //   return Response.json({ success: true, data: emailResp }, { status: 201 });
+
+
+
+
+  // } catch (error) {
+  //   console.log(error)
+  //   return Response.json({ success: false, msg: "User created, but email failed", error }, { status: 500 });
+  // }
 
 
 
 
 
-try {
 
+// Gmail SMTP email system
 
-  const html = generateEmailTemplate(username, presentCourse);
-  
-  const gmailSendingRes=await transporter.sendMail({
-    from: "ikkhan007m@gmail.com",
-    to:email,
-    subject:"Brightlancer Course subscription",
-    html,
-  });
+// const GmailSmtpEmailingResponse= await GmailSmtpEmailing(username,email,presentCourse)
 
-  console.log(gmailSendingRes)
-
-  return NextResponse.json({ success: true, msg:"check the email in spam if not visible in normal emails",
-    courseData:{
-      courseName:newApply.AppliedCourse.courseName,
-      regNo:newApply._id
-    }
-   });
-} catch (error) {
-  console.error("Email send failed:", error);
-  return NextResponse.json({ success: false, error }, { status: 500 });
-}
+// if(!GmailSmtpEmailingResponse){
+//   return NextResponse.json({success:false, message:"email is failed"})
+// }
 
 
 
@@ -187,6 +170,8 @@ try {
 
 
 
+
+// return NextResponse.json({success:true, message:"Email is successfuly send to user", GmailSmtpEmailingResponse})
 
 
 

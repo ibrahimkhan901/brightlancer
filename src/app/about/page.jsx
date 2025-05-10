@@ -57,7 +57,7 @@ export const metadata = {
 
 const About = () => {
   return (
-    <div className='pt-20 sm:pt-32'>
+    <div className='pt-32'>
 
 
 

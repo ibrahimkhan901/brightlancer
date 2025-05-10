@@ -3,12 +3,8 @@ import Image from 'next/image'
 
 
 import {
-    awardTakingImg2,
     awardTakingImg3,
     awardTakingImg4,
-    awardTakingImg5,
-    awardTakingImg6,
-    seminarImg1
 } from "../utils/Images.js"
 
 
@@ -24,12 +20,8 @@ const HomeMissionAndAchievImg = () => {
 
 
     const imagesArray = [
-        awardTakingImg2,
         awardTakingImg3,
-        awardTakingImg4,
-        awardTakingImg5,
-        awardTakingImg6,
-        seminarImg1
+        awardTakingImg4
     ]
 
 
@@ -76,13 +68,15 @@ const HomeMissionAndAchievImg = () => {
 
 
             {/* Mission explained section */}
-            <div className="min-h-[100vh] w-full flex flex-col sm:flex-row">
+            <div className="h-max w-full flex flex-col sm:flex-row ">
 
                 {/* Mission explanation text */}
-                <div className="h-max sm:h-[100vh]  w-full sm:w-1/2 bg-zinc-800 p-10 py-20 text-zinc-200">
+                <div className="h-max sm:h-[100vh]  w-full sm:w-1/2 bg-zinc-800 p-5 sm:p-10 sm:pt-20 text-zinc-200 text-center sm:text-start">
 
-                    <h3 className='text-3xl sm:text-4xl mb-5'>OUR MISSION</h3>
-                    <p className='text-md md:text-lg font-light'>Brightlancers is committed to making Pakistan—especially the youth of Bannu—a powerful force in the global eCommerce industry. Our team is fully focused on helping individuals become skilled entrepreneurs and work on international platforms like Amazon and Shopify. We aim to create thousands of digital earning opportunities through practical training and mentorship.</p>
+                    <h3 className='text-3xl sm:text-4xl mb-5 text-orange-400 font-extrabold '>OUR MISSION</h3>
+                    <p className='text-md md:text-lg font-light'>
+                        At Brightlancer Technologies, our mission is to empower the youth of Pakistan—especially from Khyber Pakhtunkhwa (KPK) and ex-FATA regions—by equipping them with future-ready digital skills. We are committed to helping students unlock their potential, enabling them to earn millions through freelancing, remote jobs, and global opportunities. With over 10,000 students already trained, we focus on practical, income-generating e-skills backed by international certifications. In collaboration with NAVTTC, KPIT Board, and the Ministry of ICT, we’re creating real pathways to success for underserved communities. Brightlancer is more than just an education platform—it’s a nationwide movement for youth empowerment. We believe every student deserves access to the global digital economy, and we’re here to bridge the gap between learning and earning. By turning raw talent into job-ready professionals, we are shaping a self-reliant, tech-enabled generation that will lead Pakistan into a brighter, digitally-driven future.
+                    </p>
 
                 </div>
 
@@ -109,7 +103,7 @@ const HomeMissionAndAchievImg = () => {
 
                     <div className="h-14 w-40 flex">
 
-                        <i className="ri-building-4-line     text-6xl text-orange-600 font-extralight flex"></i>
+                        <i className="ri-building-4-line     text-6xl text-orange-400 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
                             <h6>10,000+</h6>
@@ -125,7 +119,7 @@ const HomeMissionAndAchievImg = () => {
 
                     <div className="h-14 w-40 flex">
 
-                        <i className="ri-global-line      text-6xl text-orange-600 font-extralight flex"></i>
+                        <i className="ri-global-line      text-6xl text-orange-400 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
                             <h6>5+ Million PKR</h6>
@@ -145,7 +139,7 @@ const HomeMissionAndAchievImg = () => {
 
                     <div className="h-14 w-40 flex">
 
-                        <i className="ri-user-star-line      text-6xl text-orange-600 font-extralight flex"></i>
+                        <i className="ri-user-star-line      text-6xl text-orange-400 font-extralight flex"></i>
 
                         <div className="w-40 text-xl text-zinc-200">
                             <h6>500+</h6>

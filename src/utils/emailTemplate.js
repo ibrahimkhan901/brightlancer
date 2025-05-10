@@ -5,18 +5,18 @@
 
 
 
-export function generateEmailTemplate(username, presentCourse) {
+export function generateEmailTemplate(courseApplyData) {
     return `
        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; background: #f9f9f9; padding: 20px; border-radius: 8px; color: #333;">
                         
-                                         <h2 style="color: #2e86de; text-align: center;">${username} </h2>
+                                         <h2 style="color: #2e86de; text-align: center;">${courseApplyData.username} </h2>
 
                                         <h2 style="color: #2e86de; text-align: center;">Welcome to Brightlancers</h2>
 
                         <p>Congratulations! Your apply is submitted <strong>successfully</strong>.</p>
 
                         <p>Now we are sending you the payment method information.<br>
-                        Please pay the course fee of <strong>${presentCourse?.coursePrice}</strong>  for course <strong>${presentCourse.courseName}</strong>  using one of the following options to enroll:</p>
+                        Please pay the course fee of <strong>${courseApplyData.AppliedCourse?.coursePrice}</strong>  for course <strong>${courseApplyData.AppliedCourse?.courseName}</strong>  using one of the following options to enroll:</p>
 
                         <h3>1. Physical Payment (Recommended)</h3>
                         <p>Visit our institute and pay physically at the front desk.</p>

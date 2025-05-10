@@ -10,7 +10,7 @@ const ServicesDisclaimerAndWorks = () => {
             {/* Disclainer portion */}
             <div className=" p-5 md:p-10 lg:p-20 bg-zinc-800 border-1 border-zinc-200 rounded-lg">
 
-                <h1 className='text-[#ed051c] text-3xl font-extrabold'>Disclaimer</h1>
+                <h1 className='text-[#e66e22] text-3xl font-extrabold'>Disclaimer</h1>
                 <h3 className='text-sm md:text-2xl font-medium mb-5 text-zinc-200 mt-5'>Please read the following clauses carefully before engaging with any businesses listed here:</h3>
 
 

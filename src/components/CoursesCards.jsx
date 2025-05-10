@@ -58,8 +58,8 @@ const CoursesCards = () => {
 
 
 
-            <div className="mt-20 ">
-                <h1 className='text-2xl lg:text-4xl font-bold px-10 mb-3 '>ECOMMERCE TRAINING PROGRAMS THAT WORKS</h1>
+            <div className="mt-20 text-center ">
+                <h1 className='text-2xl lg:text-4xl  px-10 mb-3 text-orange-500 font-extrabold '>ECOMMERCE TRAINING PROGRAMS THAT WORKS</h1>
                 <p className='text-xl lg:text-2xl font-medium px-10'>Step beyond your comfort zone — Brightlancers brings you practical, results-driven training designed to ignite your entrepreneurial journey and digital growth.</p>
             </div>
 
@@ -92,7 +92,7 @@ const CoursesCards = () => {
                                         className='h-max w-full mb-5 rounded-md'
                                         src="https://imgs.search.brave.com/OP5tmI1gaTotwGLRpaIsEemIgsuPKRgUrmyiwLh79SA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kM2Yx/aXlmeHh6OGkxZS5j/bG91ZGZyb250Lm5l/dC9jb3Vyc2VzL2Nv/dXJzZV9pbWFnZS82/MmY0OWE4OTBmY2Yu/anBn" alt="" /> */}
                                     <h1
-                                        className='h-max w-[90%] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 font-bold text-3xl text-zinc-100'>
+                                        className='h-max w-[90%] absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 font-bold text-3xl text-orange-100'>
                                         {eachData.courseName}
                                     </h1>
                                 </div>

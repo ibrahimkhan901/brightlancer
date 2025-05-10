@@ -93,7 +93,7 @@ const Hero = () => {
     return (
 
 
-        <div className="mt-0 flex flex-col-reverse lg:flex-row w-full bg-zinc-900 overflow-x-hidden mb-[-20px] md:mb-20">
+        <div className="mt-0 flex flex-col-reverse lg:flex-row w-full bg-zinc-900 overflow-x-hidden mb-[-20px] md:mb-20 pt-32">
 
 
 
@@ -102,13 +102,15 @@ const Hero = () => {
 
 
             {/* Text Section (on bottom for small, left for md+) */}
-            <div className="w-full lg:w-1/2 p-5  pt-10 pl-18  xl:mt-10 text-zinc-100 ">
+            <div className="w-full lg:w-1/2 p-5  sm:pt-10 sm:pl-18  xl:mt-10 text-zinc-100 text-center sm:text-start">
                 <h1 className="font-extrabold text-2xl lg:text-4xl mb-5 text-[#fd6a0e]">
                     Brightlancer Technologies
                 </h1>
                 <p className="font-sans font-medium text-lg lg:text-xl mb-10 text-shadow-zinc-400">
-                Brightlancers is more than just an academy—it's a movement dedicated to unlocking the full potential of young minds in Bannu and across Pakistan. Through cutting-edge eCommerce training, hands-on digital skill development, and real-world business mentorship, we’re equipping the next generation with the tools to launch successful online businesses, secure remote jobs, and thrive in the world’s fastest-growing digital markets. Whether you're a student, freelancer, or aspiring entrepreneur, Brightlancers gives you the platform, guidance, and community to turn your ambition into action and your skills into income.
-                </p>
+                    Brightlancer Technologies is a leading e-skills and digital education platform dedicated to empowering the youth of Pakistan. Focused on practical learning and globally recognized certifications, Brightlancer has equipped over 10,000 students with in-demand digital skills—enabling them to earn, grow, and compete in international markets. Our mission is to unlock economic opportunities through skill development, innovation, and career-oriented training.
+                    Brightlancer Technologies, in collaboration with NAVTTC, KPIT Board, and ICT, empowers youth—especially in KPK and ex-FATA—with e-skills and international certifications. Over 10,000 students have been trained to earn and thrive in the global digital economy.
+                    We focus on practical, in-demand skills that open doors to freelancing, remote jobs, and entrepreneurship.
+                    Our mission is to bridge the skill gap and create a self-reliant, tech-enabled generation across Pakistan.                                </p>
             </div>
 
 

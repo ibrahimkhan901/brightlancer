@@ -27,10 +27,10 @@ const page = () => {
 
                 <div className="h-max w-full text-center text-3xl font-bold mb-20 ">
                     <p>Congratulation! Your Apply is submitted successfully.</p>
-                    <p className='font-bold text-orange-600'>{appliedCourseData?.courseName}</p>
+                    <p className='font-bold text-orange-600'>{appliedCourseData?.AppliedCourse.courseName}</p>
                     <div className="h-max w-full  mt-10 font-bold flex flex-wrap items-center justify-center">
                         <p>Registraton number:</p>
-                        <p className='font-bold text-orange-600 text-2xl'>{appliedCourseData?.regNo}</p>
+                        <p className='font-bold text-orange-600 text-2xl'>{appliedCourseData?._id}</p>
                     </div>
                 </div>
 

@@ -22,10 +22,10 @@ const CourseApplyForm = () => {
 
 
 
-    let { currentClickedCourseData, 
+    let { currentClickedCourseData,
         setCurrentNavContext,
         setApplyCourseData
-     } = useContext(MyContext)
+    } = useContext(MyContext)
     let [loaderVisibiliy, setLoaderVisibility] = useState(null)
     let router = useRouter()
 
@@ -127,32 +127,43 @@ const CourseApplyForm = () => {
             }
 
 
-            console.log(response.data)
+
+
+
             if (response.data.success == true) {
-                setApplyCourseData(response.data.courseData)
+                setApplyCourseData(response.data.courseApplyData)
+
+                // sending the req to backend to send the email to user
+                
+                
                 alert("Applied Successfully")
                 router.push("/courseApplySuccess")
+                
+                
+                
+                let emailSendingResponse= await axiosReqSender("post", "/api/sendEmail", {courseApplyId :response.data.courseApplyData?._id})
+                console.log(emailSendingResponse?.data)
             }
 
 
 
 
 
-            setFormData({
-                username: '',
-                fatherName: "",
-                cnicNo: '',
-                email: '',
-                password: '',
-                phoneNo: "",
-                gender: "male",
-                country: "",
-                city: '',
-                fullAddress: "",
-                refferedBy: "facebook",
-                agreeOrNot: false,
-                courseId: ''
-            })
+            // setFormData({
+            //     username: '',
+            //     fatherName: "",
+            //     cnicNo: '',
+            //     email: '',
+            //     password: '',
+            //     phoneNo: "",
+            //     gender: "male",
+            //     country: "",
+            //     city: '',
+            //     fullAddress: "",
+            //     refferedBy: "facebook",
+            //     agreeOrNot: false,
+            //     courseId: ''
+            // })
 
 
 
@@ -457,16 +468,16 @@ const CourseApplyForm = () => {
                         className='h-full w-full bg-blue-600 py-2 rounded-lg text-zinc-50 text-xl relative'
                         type='submit'>
 
-                        
-                            Submit
+
+                        Submit
 
 
-                            <div 
+                        <div
                             className='absolute top-1/2 right-1/3 -translate-y-1/2'
                             style={{ display: loaderVisibiliy ? "block" : "none" }}
-                            >
-                                <Loader height={20} width={20} />
-                            </div>
+                        >
+                            <Loader height={20} width={20} />
+                        </div>
 
 
 

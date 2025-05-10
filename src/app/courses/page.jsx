@@ -62,7 +62,7 @@ export const metadata = {
 
 const Courses = () => {
   return (
-    <div className='pt-2 sm:pt-32'>
+    <div className='pt-14 sm:pt-32'>
         
 
 

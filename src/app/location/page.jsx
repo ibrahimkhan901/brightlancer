@@ -43,7 +43,7 @@ const Location = () => {
 
 
   return (
-    <div className='pt-10 '>
+    <div className='pt-20 '>
 
 
 
@@ -56,7 +56,7 @@ const Location = () => {
          
          
           <div className="h-full w-full md:w-1/2 xl:pt-20 flex items-center justify-center  text-center flex-col gap-8">
-            <h1 className='h-max text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 pt-5'>Brightlancers Behind Shadman Plaza, Railway Road, Bannu, Khyber Pakhtunkhwa, Pakistan</h1>
+            <h1 className='h-max text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 pt-5 text-orange-500'>Brightlancers Behind Shadman Plaza, Railway Road, Bannu, Khyber Pakhtunkhwa, Pakistan</h1>
             <button
               onClick={handleViewOnMapBtnClick}
               className='h-max w-max p-3 px-16 bg-blue-600 rounded-md text-zinc-100 cursor-pointer'>View on map </button>
@@ -70,13 +70,7 @@ const Location = () => {
           alt='location image of brightlancers'
           />
 
-{/* 
-          <img
-            className='h-full w-full md:w-1/2 rounded-md'
-            src="https://www.enablers.org/public/storage/uploads/admin/offices-images//dWSnGulQxpV0CHTCKwGdGUkZibg3hBoQHwSVE8jQ.png" alt="" />
-   
-    */}
-   
+
         </div>
 
 

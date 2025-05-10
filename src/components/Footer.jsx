@@ -14,18 +14,18 @@ const Footer = () => {
 
     return (
         <footer
-            className='h-max w-full overflow-x-hidden text-center  flex flex-col gap-10 md:flex-row justify-center md:justify-between  p-5 md:px-20 mt-20 relative'>
+            className='h-max w-full overflow-x-hidden text-center  flex flex-col gap-10 md:flex-row justify-center md:justify-between  p-5 md:px-20 mt-20 relative select-none'>
 
 
 
 
-            <div className="h-1 bg-zinc-300 w-full absolute top-0 right-0"></div>
+            {/* <div className="h-1 bg-zinc-300 w-full absolute top-0 right-0 "></div> */}
 
 
 
 
             {/* Quick Links */}
-            <div className='w-full'>
+            <div className='w-full '>
                 <h3 className="h-max  font-bold text-xl text-[#F05C2F] mb-2">Quick Links</h3>
                 <ul className='cursor-pointer'>
                     <li onClick={()=>{router.push("/")}}>Home</li>

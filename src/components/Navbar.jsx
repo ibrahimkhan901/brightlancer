@@ -4,7 +4,7 @@ import React, { useContext, useState } from 'react'
 import 'remixicon/fonts/remixicon.css'
 import MyContext from '../context/MyContext'
 import { useRouter } from 'next/navigation';
-import Logo from '../../public/images/BLlogo.png'
+import Logo from '../../public/images/newBlLogo.png'
 import Image from 'next/image';
 
 
@@ -46,21 +46,27 @@ const Navbar = () => {
 
         if (currentNav === "HOME" && currentNavContext.toUpperCase() !== "HOME") {
             router.push("/");
+            setShowMenu(false)
             setCurrentNavContext("HOME");
         } else if (currentNav === "ABOUT" && currentNavContext.toUpperCase() !== "ABOUT") {
             router.push("/about");
+            setShowMenu(false)
             setCurrentNavContext("ABOUT");
         } else if (currentNav === "SERVICES" && currentNavContext.toUpperCase() !== "SERVICES") {
             router.push("/services");
+            setShowMenu(false)
             setCurrentNavContext("SERVICES");
         } else if (currentNav === "COURSES" && currentNavContext.toUpperCase() !== "COURSES") {
             router.push("/courses");
+            setShowMenu(false)
             setCurrentNavContext("COURSES");
         } else if (currentNav === "LOCATION" && currentNavContext.toUpperCase() !== "LOCATION") {
             router.push("/location");
+            setShowMenu(false)
             setCurrentNavContext("LOCATION");
         } else if (currentNav === "CONTACT" && currentNavContext.toUpperCase() !== "CONTACT") {
             router.push("/contact");
+            setShowMenu(false)
             setCurrentNavContext("CONTACT");
         }
     }
@@ -82,7 +88,7 @@ const Navbar = () => {
 
 
     function handleMenuCrossBtnClick() {
-            setShowMenu(false)
+        setShowMenu(false)
     }
 
 
@@ -99,24 +105,24 @@ const Navbar = () => {
     return (
         <header className=' custom_glassy_effect            w-full overflow-hidden overflow-x-hidden fixed top-0 left-0 z-[1000] '>
 
-            <div className='h-20 sm:h-28  w-full  flex justify-between px-4 sm:px-7 '>
+            <div className='h-32 sm:h-28  w-full  flex justify-between px-4 sm:px-7 '>
 
 
 
 
- 
+
                 {/*  The logo of Navbar */}
                 <div className="h-32 w-56 flex items-center select-none mb-5 ">
-                  
-                  <Image
-                    src={Logo}
-                    alt='Logo of Brightlancer'
-                    height={400}
-                    width={800}
-                    className='h-[100%] w-max '
-                  />
-                  
-                   </div>
+
+                    <Image
+                        src={Logo}
+                        alt='Logo of Brightlancer'
+                        height={400}
+                        width={800}
+                        className='h-[100%] w-max '
+                    />
+
+                </div>
 
 
 
@@ -131,7 +137,7 @@ const Navbar = () => {
                     <div className="nav_show_on_small_screen        h-max w-full  flex   justify-end items-center  cursor-pointer select-none">
                         <i
                             onClick={handleMenuIconClick}
-                            className="ri-menu-line text-3xl font-extralight "
+                            className="ri-menu-line text-3xl font-extralight text-orange-500"
                         ></i>
                     </div>
 
@@ -145,9 +151,9 @@ const Navbar = () => {
                         {
                             navArray.map((eachNav, index) => (
                                 <div
-                                key={index}
+                                    key={index}
                                     style={currentNavContext == eachNav ? { borderBottom: "3px solid orange", paddingBottom: "3px" } : null}
-                                    className="text-center text-sm font-medium cursor-pointer select-none transition-all duration-500">
+                                    className="text-center text-sm font-bold cursor-pointer select-none transition-all duration-500 text-orange-400 ">
                                     {eachNav}
                                 </div>
                             ))
@@ -208,11 +214,11 @@ const Navbar = () => {
 
 
                         {/* cross button to hide nav panel */}
-                        <div 
-                        onClick={handleMenuCrossBtnClick}
-                        className="w-6 h-6 cursor-pointer flex items-center justify-center text-sm text-orange-500 font-bold absolute top-0 right-10 border-1 border-orange-500 rounded-full">X</div>
+                        <div
+                            onClick={handleMenuCrossBtnClick}
+                            className="w-6 h-6 cursor-pointer flex items-center justify-center text-sm text-orange-500 font-bold absolute top-0 right-10 border-1 border-orange-500 rounded-full">X</div>
 
-                        
+
                     </div>
 
 
